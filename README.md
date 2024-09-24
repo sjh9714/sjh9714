@@ -1,7 +1,6 @@
 # JinHyuk's GitHub Profile 👋
 
-<a href=""<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">&nbsp
-  href="github.com/jinhyuk9714"<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">&nbsp
+<a href="github.com/jinhyuk9714"<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">&nbsp
 
 </a>
 ![Java]
