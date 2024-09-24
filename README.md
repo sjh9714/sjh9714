@@ -1,5 +1,5 @@
 <div align="center">
-  ### JinHyuk
+  JinHyuk
 
 </div>
 
