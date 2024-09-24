@@ -19,6 +19,3 @@
 ## Baekjoon Profile 🌐
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=jinhyuk9714)](https://solved.ac/jinhyuk9714)
 
-## Contact Me 📫
-- **GitHub**: [github.com/jinhyuk9714](https://github.com/jinhyuk9714)
-- **Baekjoon**: [solved.ac/jinhyuk9714](https://solved.ac/jinhyuk9714)
