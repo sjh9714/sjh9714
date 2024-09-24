@@ -6,7 +6,7 @@
 ![Baekjoon](https://img.shields.io/badge/Baekjoon-007396?style=for-the-badge&logoColor=white)
 
 ## About Me 👨‍💻
-안녕하세요! 저는 **JinHyuk**이라고 합니다. 주로 자바와 스프링을 사용하여 백엔드 개발을 하고 있습니다. 새로운 기술을 배우고 문제를 해결하는 것을 좋아하며, 깃허브와 백준에서 꾸준히 활동하고 있습니다.
+가톨릭대학교 컴퓨터정보공학부 21학번 성진혁
 
 ## My Skills 💡
 - **Back-end Development**: Java, Spring Framework
