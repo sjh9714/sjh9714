@@ -7,6 +7,7 @@
 
 ## About Me 👨‍💻
 가톨릭대학교 컴퓨터정보공학부 21학번 성진혁
+가톨릭대학교 멋쟁이사자처럼 12기 (백엔드)
 
 ## My Skills 💡
 - **Back-end Development**: Java, Spring Framework
