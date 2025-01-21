@@ -4,6 +4,7 @@
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jinhyuk9714)
 [![Baekjoon](https://img.shields.io/badge/Baekjoon-007396?style=for-the-badge&logoColor=white)](https://www.acmicpc.net/user/jinhyuk9714)
+[![Programmers](https://img.shields.io/badge/Programmers-2E6E9E?style=for-the-badge&logo=programmers&logoColor=white)](https://school.programmers.co.kr/learn/challenges?username=jinhyuk9714)
 
 ## About Me 👨‍💻
 - 가톨릭대학교 컴퓨터정보공학부 21학번 성진혁
@@ -12,7 +13,7 @@
 ## My Skills 💡
 - **Back-end Development**: Java, Spring Framework
 - **Version Control**: Git, GitHub
-- **Algorithms & Problem Solving**: 백준(Baekjoon)
+- **Algorithms & Problem Solving**: 백준(Baekjoon), 프로그래머스(Programmers)
 
 ## GitHub Stats 📊
 ![JinHyuk's GitHub stats](https://github-readme-stats.vercel.app/api?username=jinhyuk9714&show_icons=true&theme=radical)
@@ -20,3 +21,5 @@
 ## Baekjoon Profile 🌐
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=jinhyuk9714)](https://solved.ac/jinhyuk9714)
 
+## Programmers Profile 🌟
+[![Programmers Badge](https://school.programmers.co.kr/assets/skillbadges/badge-programmers.svg)](https://school.programmers.co.kr/learn/challenges?username=jinhyuk9714)
