@@ -22,4 +22,5 @@
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=jinhyuk9714)](https://solved.ac/jinhyuk9714)
 
 ## Programmers Profile 🌟
-![Programmers Badge](https://raw.githubusercontent.com/jinhyuk9714/Programmers_Badge_Generator/main/result/result.svg)
+[![Programmers Profile](https://img.shields.io/badge/Programmers-2E6E9E?style=for-the-badge&logo=programmers&logoColor=white)](https://school.programmers.co.kr/learn/challenges?username=jinhyuk9714)
+
