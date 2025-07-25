@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner1.png" width="800"/>
+</p>
+
 # JinHyuk's GitHub Profile 👋
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
