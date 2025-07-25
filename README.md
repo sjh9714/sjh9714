@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/NeonSign.png" width="600"/>
+  <img src="./assets/NeonSign.png" width="700"/>
 </p>
 
 # JinHyuk's GitHub Profile 👋
