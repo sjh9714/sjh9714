@@ -12,7 +12,8 @@
 - 가톨릭대학교 멋쟁이사자처럼 12기 (백엔드)
 
 ## My Skills 💡
-- **Back-end Development**: Java, Spring Framework, Python
+- **Back-end Development**: Java, Spring Framework
+- **Algorithm & Problem Solving**: Python, Java
 - **Version Control**: Git, GitHub
 - **Algorithms & Problem Solving**: 백준(Baekjoon), 프로그래머스(Programmers)
 
