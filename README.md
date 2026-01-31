@@ -41,22 +41,6 @@
 
 <br />
 
-### 📈 Statistics
-
-<div align="center">
-  <br />
-  <img src="https://github-readme-stats.vercel.app/api?username=jinhyuk9714&show_icons=true&theme=transparent&hide_border=true&title_color=000&text_color=333&icon_color=000" height="150" alt="GitHub Stats" />
-  <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=jinhyuk9714" height="150" alt="Solved.ac Tier" />
-  
-  <br /><br />
-  
-  <a href="https://school.programmers.co.kr/learn/challenges?username=jinhyuk9714">
-    <img src="https://raw.githubusercontent.com/jinhyuk9714/Programmers_Badge_Generator/main/result/result.svg" width="320" alt="Programmers Badge" />
-  </a>
-</div>
-
-<br />
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=100&section=footer" width="100%" />
 </div>
