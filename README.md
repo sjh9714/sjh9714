@@ -8,7 +8,7 @@
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 <br/>
-[![Portfolio](https://img.shields.io/badge/Portfolio-20Me?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-site-green-rho-42.vercel.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-181717?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-site-green-rho-42.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jinhyuk9714)
 [![Baekjoon](https://img.shields.io/badge/Baekjoon-007396?style=for-the-badge&logoColor=white)](https://www.acmicpc.net/user/jinhyuk9714)
 [![Programmers](https://img.shields.io/badge/Programmers-2E6E9E?style=for-the-badge&logo=programmers&logoColor=white)](https://school.programmers.co.kr/learn/challenges?username=jinhyuk9714)
