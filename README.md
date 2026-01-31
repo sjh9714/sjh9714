@@ -1,7 +1,9 @@
 <div align="center">
-  <br />
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=200&section=header&text=JinHyuk&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" alt="Header" />
   
+  <img src="./assets/NeonSign.gif" width="100%" alt="Welcome Banner" />
+  
+  <br /><br />
+
   <h3>Backend Developer, Seong JinHyuk</h3>
   
   <p>
@@ -38,6 +40,21 @@
 | **Framework** | <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20Cloud-6DB33F?style=flat-square&logo=spring&logoColor=white" /> |
 | **Database** | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" /> |
 | **DevOps & Tools** | <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" /> |
+
+<br />
+
+### 🏆 Algorithm & Problem Solving
+
+<div align="center">
+  <br />
+  <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=jinhyuk9714" height="150" alt="Solved.ac Tier" />
+  
+  <br /><br />
+  
+  <a href="https://school.programmers.co.kr/learn/challenges?username=jinhyuk9714">
+    <img src="https://raw.githubusercontent.com/jinhyuk9714/Programmers_Badge_Generator/main/result/result.svg" width="300" alt="Programmers Badge" />
+  </a>
+</div>
 
 <br />
 
