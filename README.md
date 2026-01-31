@@ -17,9 +17,6 @@
   
   <br />
   
-  <a href="https://portfolio-site-green-rho-42.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-Visit%20Me-20C20E?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
   <a href="https://github.com/jinhyuk9714"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="https://www.acmicpc.net/user/jinhyuk9714"><img src="https://img.shields.io/badge/Baekjoon-007396?style=for-the-badge&logo=baekjoon&logoColor=white" /></a>
   <a href="https://school.programmers.co.kr/learn/challenges?username=jinhyuk9714"><img src="https://img.shields.io/badge/Programmers-2E6E9E?style=for-the-badge&logo=programmers&logoColor=white" /></a>
@@ -35,7 +32,6 @@
 - **성진혁 (JinHyuk)**
 - **가톨릭대학교** 컴퓨터정보공학부 21학번
 - **멋쟁이사자처럼 12기** (백엔드)
-- 📂 [**포트폴리오 바로가기**](https://portfolio-site-green-rho-42.vercel.app/)
       
     </td>
     <td width="50%" valign="top">
