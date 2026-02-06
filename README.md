@@ -4,9 +4,9 @@
 
 <div align="center">
 
-# Hey, I'm JinHyuk 👋
+# 안녕하세요, 성진혁입니다 👋
 
-**Backend Developer** who builds scalable systems with Spring Boot & MSA
+**문제를 나누고, 측정하고, 개선하는 개발을 지향하는 백엔드 개발자**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-site-green-rho-42.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jinhyuk9714)
@@ -16,13 +16,14 @@
 
 ---
 
-### About Me
+### 소개
 
 - 가톨릭대학교 컴퓨터정보공학부
 - 멋쟁이사자처럼 12기 (백엔드)
-- 분산 시스템, 성능 최적화, AI/RAG 파이프라인에 관심이 많습니다
+- 배우고 나누는 개발을 지향합니다.
+- 문제를 나누고 해결한 과정을 문서와 코드로 남기는 걸 좋아합니다.
 
-### Tech Stack
+### 기술 스택
 
 **Backend**&nbsp;&nbsp;
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
@@ -46,7 +47,7 @@
 
 ---
 
-### GitHub Stats
+### GitHub 통계
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jinhyuk9714&theme=radical" width="100%"/>
@@ -54,17 +55,12 @@
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jinhyuk9714&theme=radical" width="49%"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jinhyuk9714&theme=radical" width="49%"/>
-</p>
-
-<p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jinhyuk9714&theme=radical" width="49%"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=jinhyuk9714&theme=radical&utcOffset=9" width="49%"/>
 </p>
 
 ---
 
-### Problem Solving
+### 알고리즘
 
 <p align="center">
   <a href="https://solved.ac/jinhyuk9714">
