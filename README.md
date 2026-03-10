@@ -47,19 +47,6 @@
 
 ---
 
-### GitHub 통계
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jinhyuk9714&theme=radical" width="100%"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jinhyuk9714&theme=radical" width="49%"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jinhyuk9714&theme=radical" width="49%"/>
-</p>
-
----
-
 ### 알고리즘
 
 <p align="center">
