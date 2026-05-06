@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/NeonSign.gif" width="700" alt="성진혁 GitHub 프로필 배너"/>
+</p>
+
 <div align="center">
 
 # 성진혁 | Spring Backend
@@ -18,6 +22,11 @@
 - 부하 테스트와 로그, 지표를 통해 병목을 확인하고 개선합니다.
 - 동시성 제어, 캐시, 메시징, 복구 흐름을 포트폴리오 사례로 정리했습니다.
 - 문제를 나누고 해결 과정을 코드, 다이어그램, 수치로 남기는 편입니다.
+
+### Education / Activity
+
+- 가톨릭대학교 컴퓨터정보공학부
+- 가톨릭대학교 멋쟁이사자처럼 12기 백엔드
 
 ### Portfolio Highlights
 
