@@ -217,7 +217,7 @@ JD 분석 기반 질문 생성과 SSE 피드백을 제공하는
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jinhyuk9714&layout=compact&theme=transparent&hide_border=true" height="160" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jinhyuk9714&theme=github_dark" />
 
 </div>
 
