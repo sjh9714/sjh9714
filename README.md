@@ -10,9 +10,6 @@
 <a href="https://portfolio-site-green-rho-42.vercel.app/resume">
   <img src="https://img.shields.io/badge/Resume-0A7F45?style=for-the-badge&logo=readme&logoColor=white" />
 </a>
-<a href="https://portfolio-site-green-rho-42.vercel.app/resume.pdf">
-  <img src="https://img.shields.io/badge/Resume_PDF-0B5FFF?style=for-the-badge&logo=googledocs&logoColor=white" />
-</a>
 <a href="https://github.com/jinhyuk9714">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
