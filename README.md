@@ -1,82 +1,97 @@
-<div align="center">
+# 성진혁 | Product-minded Backend Developer
 
-# 성진혁 | Spring Backend
+사용자의 흩어진 문제를 서비스 흐름으로 정리하고,
+백엔드와 AI를 활용해 실제로 동작하는 결과물로 만드는 개발자입니다.
 
-**동시성, 성능, 관측성 문제를 측정하고 개선하는 백엔드 개발자**
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-site-green-rho-42.vercel.app/)
-[![Resume](https://img.shields.io/badge/Resume-0A7F45?style=for-the-badge&logo=readme&logoColor=white)](https://portfolio-site-green-rho-42.vercel.app/resume)
-[![Resume PDF](https://img.shields.io/badge/Resume_PDF-0B5FFF?style=for-the-badge&logo=googledocs&logoColor=white)](https://portfolio-site-green-rho-42.vercel.app/resume.pdf)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jinhyuk9714)
-[![Baekjoon](https://img.shields.io/badge/Baekjoon-007396?style=for-the-badge&logoColor=white)](https://www.acmicpc.net/user/jinhyuk9714)
-
-</div>
+[Portfolio] [Resume] [GitHub] [Baekjoon]
 
 ---
 
-### Focus
+## About Me
 
-- Spring Boot, JPA, Redis, Kafka 기반 백엔드 문제를 다룹니다.
-- 부하 테스트와 로그, 지표를 통해 병목을 확인하고 개선합니다.
-- 동시성 제어, 캐시, 메시징, 복구 흐름을 포트폴리오 사례로 정리했습니다.
-- 문제를 나누고 해결 과정을 코드, 다이어그램, 수치로 남기는 편입니다.
-- 포트폴리오 홈의 3분 Evidence Matrix와 [Resume](https://portfolio-site-green-rho-42.vercel.app/resume)에서 역량별 근거 링크를 바로 확인할 수 있습니다.
-
-### Portfolio Highlights
-
-| Case Study | Backend Theme |
-| --- | --- |
-| Concert Booking | Redis 대기열, 좌석 락, Kafka 복구 흐름 |
-| Realtime Chat | Kafka 파티션 키, Redis fan-out, Cache Aside |
-| TimeDeal Service | 재고 동시성, 주문 burst, lock 경합 |
-| BorrowMe | N+1 개선, 예약 정합성, 이미지 업로드 흐름 |
-
-포트폴리오에서 각 프로젝트의 문제, 담당 범위, 측정 시나리오, 결과, trade-off를 함께 볼 수 있습니다.
-3분 Evidence Matrix는 Spring 백엔드 역량, 대표 수치, 프로젝트 상세 링크를 한 화면에 묶어 보여줍니다.
-
-### Tech Stack
-
-**Backend**&nbsp;&nbsp;
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA-59666C?style=flat-square&logo=hibernate&logoColor=white)
-
-**Data / Messaging**&nbsp;&nbsp;
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
-
-**Infra / Quality**&nbsp;&nbsp;
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-
-**AI / RAG**&nbsp;&nbsp;
-![LangChain4j](https://img.shields.io/badge/LangChain4j-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F61?style=flat-square&logoColor=white)
+- 가톨릭대학교에서 팀 프로젝트와 해커톤을 통해 서비스를 기획하고 구현해왔습니다.
+- 2024년 멋쟁이사자처럼 12기 활동을 통해 협업 기반 웹 서비스 개발을 경험했습니다.
+- 2026년 하나 청년 금융인재 양성 프로젝트 본선에 합격해 ESG·미래금융 서비스 개발 프로젝트를 진행하고 있습니다.
+- 문제 정의, 사용자 흐름 설계, 백엔드 구현, 성능 개선, 발표용 산출물 정리를 함께 다루는 것을 좋아합니다.
 
 ---
 
-### GitHub Stats
+## Experience
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jinhyuk9714&theme=radical" width="100%" alt="GitHub profile summary"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jinhyuk9714&theme=radical" width="49%" alt="GitHub repositories by language"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jinhyuk9714&theme=radical" width="49%" alt="GitHub stats"/>
-</p>
+| Period | Experience | What I did |
+|---|---|---|
+| 2026.04 ~ Present | 하나 청년 금융인재 양성 프로젝트 | 유학생 금융 온보딩을 주제로 Hana EZ 기반 프로토타입 제작 |
+| 2024.03 ~ 2025.02 | 멋쟁이사자처럼 12기 @ 가톨릭대학교 | 7인 팀 프로젝트에서 Spring Boot API, 인증, S3, 성능 개선 경험 |
+| 2024 | 가톨릭대학교 GGUM 해커톤 | 11인 팀 프로젝트에서 예약 정합성, N+1 개선, k6 성능 테스트 담당 |
 
 ---
 
-### Algorithm
+## Featured Projects
 
-<p align="center">
-  <a href="https://www.acmicpc.net/user/jinhyuk9714">
-    <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=jinhyuk9714" alt="Baekjoon solved badge"/>
-  </a>
-</p>
+### Hana EZ Student Start Mode
+외국인 유학생의 입국 초기 금융 온보딩을 돕는 Hana EZ 기반 정적 HTML 프로토타입입니다.
+
+- 하나 청년 금융인재 양성 프로젝트 4인 팀 산출물
+- 학교, 비자, 국적, ARC 상태에 따라 가능한 금융 절차와 다음 단계를 분리
+- 체크리스트, 스마트 캘린더, AI 금융 도우미 흐름을 발표용 데모로 구현
+
+### songsim-campus-mcp
+가톨릭대 성심교정 학생 정보를 공식 source 기반 Remote MCP와 HTTP API로 연결한 캠퍼스 도우미 서버입니다.
+
+- 공지, 학사일정, 강의, 도서관 좌석, 식당, Wi-Fi 등 학생 생활 정보 통합
+- 공식 source에 없는 값은 생성하지 않고 fallback 상태를 명시
+- public QA corpus와 회귀 테스트로 답변 신뢰성 검증
+
+### Memory of Year
+멋쟁이사자처럼 12기에서 진행한 앨범·편지·사진·스티커 기반 추억 기록 서비스입니다.
+
+- 7인 팀 프로젝트에서 Spring Boot REST API 개발
+- JWT 인증, S3 업로드, Swagger 문서, k6 부하 테스트 구성
+- 편지 목록 조회 N+1 문제 개선: DB 쿼리 31회 → 1회
+
+### BorrowMe
+대학생 간 물건 대여 흐름을 다루는 Spring Boot REST API 프로젝트입니다.
+
+- 가톨릭대학교 GGUM 해커톤 11인 팀 프로젝트
+- 예약 시스템, Pessimistic Lock 기반 동시성 제어, 알림 시스템 담당
+- 상품 목록 조회와 동시 예약 정합성 개선 기록 보유
+
+### Note2Quiz
+강의자료를 AI 퀴즈, 오답노트, SM-2 복습으로 연결하는 학습 서비스입니다.
+
+- PDF/텍스트 자료 업로드 후 Claude API 기반 퀴즈 생성
+- 단답형·빈칸 문제 의미 기반 채점
+- 학습 진도, 정답률, 취약 개념, 복습 일정 대시보드 제공
+
+### AI Interview Coach
+JD 분석 기반 질문 생성과 SSE 피드백을 제공하는 AI 면접 코치입니다.
+
+- Spring Boot 기반 5개 서비스와 Next.js 프론트엔드 구성
+- JD 분석, 질문 생성, 면접 세션, 피드백, 통계 흐름 분리
+- RAG, Redis 캐싱, SSE 스트리밍, 성능 개선 기록 포함
+
+---
+
+## Engineering Strengths
+
+- **Backend API**: Spring Boot, FastAPI, REST API, 인증/인가, 파일 업로드
+- **Reliability**: 동시성 제어, Pessimistic Lock, Redis Lock, fallback 설계
+- **Performance**: N+1 개선, k6 부하 테스트, 캐시, 인덱스, 쿼리 최적화
+- **AI Service**: Claude API, RAG, MCP, SSE streaming, 프롬프트 파이프라인
+- **Collaboration**: 해커톤, 동아리 팀 프로젝트, 발표용 프로토타입, 문서화
+
+---
+
+## More Case Studies
+
+백엔드 성능과 동시성 실험은 포트폴리오에서 더 자세히 정리했습니다.
+
+- Concert Booking: 좌석 예매 동시성, Redis 대기열, Kafka 복구 흐름
+- Timedeal Service: 주문 burst, 캐시, rate limiting, circuit breaker
+- Realtime Chat: Kafka, WebSocket, Redis Pub/Sub, 메시지 순서 보장
+
+---
+
+## Tech Stack
+
+Java · Spring Boot · JPA · MySQL · PostgreSQL · Redis · Kafka · Docker · GitHub Actions · k6 · Prometheus · Grafana · FastAPI · Next.js · TypeScript · Claude API
