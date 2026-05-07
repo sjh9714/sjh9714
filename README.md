@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./assets/NeonSign.gif" width="700" alt="성진혁 GitHub 프로필 배너"/>
-</p>
-
 <div align="center">
 
 # 성진혁 | Spring Backend
@@ -9,6 +5,8 @@
 **동시성, 성능, 관측성 문제를 측정하고 개선하는 백엔드 개발자**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-site-green-rho-42.vercel.app/)
+[![Resume](https://img.shields.io/badge/Resume-0A7F45?style=for-the-badge&logo=readme&logoColor=white)](https://portfolio-site-green-rho-42.vercel.app/resume)
+[![Resume PDF](https://img.shields.io/badge/Resume_PDF-0B5FFF?style=for-the-badge&logo=googledocs&logoColor=white)](https://portfolio-site-green-rho-42.vercel.app/resume.pdf)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jinhyuk9714)
 [![Baekjoon](https://img.shields.io/badge/Baekjoon-007396?style=for-the-badge&logoColor=white)](https://www.acmicpc.net/user/jinhyuk9714)
 
@@ -22,11 +20,7 @@
 - 부하 테스트와 로그, 지표를 통해 병목을 확인하고 개선합니다.
 - 동시성 제어, 캐시, 메시징, 복구 흐름을 포트폴리오 사례로 정리했습니다.
 - 문제를 나누고 해결 과정을 코드, 다이어그램, 수치로 남기는 편입니다.
-
-### Education / Activity
-
-- 가톨릭대학교 컴퓨터정보공학부
-- 가톨릭대학교 멋쟁이사자처럼 12기 백엔드
+- 포트폴리오 홈의 3분 Evidence Matrix와 [Resume](https://portfolio-site-green-rho-42.vercel.app/resume)에서 역량별 근거 링크를 바로 확인할 수 있습니다.
 
 ### Portfolio Highlights
 
@@ -38,6 +32,7 @@
 | BorrowMe | N+1 개선, 예약 정합성, 이미지 업로드 흐름 |
 
 포트폴리오에서 각 프로젝트의 문제, 담당 범위, 측정 시나리오, 결과, trade-off를 함께 볼 수 있습니다.
+3분 Evidence Matrix는 Spring 백엔드 역량, 대표 수치, 프로젝트 상세 링크를 한 화면에 묶어 보여줍니다.
 
 ### Tech Stack
 
