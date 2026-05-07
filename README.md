@@ -180,26 +180,6 @@ JD 분석 기반 질문 생성과 SSE 피드백을 제공하는
 
 ---
 
-## 🛠 Tech Stack
-
-<div align="center">
-
-### Main Tools
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=java,spring,hibernate,mysql,postgres,redis,kafka,docker,githubactions,prometheus,grafana,py,fastapi,nextjs,ts,react,tailwind,vercel&perline=9&theme=light" />
-</a>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Backend-REST_API_%7C_Auth_%7C_File_Upload-0F172A?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Reliability-Concurrency_%7C_Cache_%7C_Fallback-0A7F45?style=for-the-badge" />
-<img src="https://img.shields.io/badge/AI-RAG_%7C_MCP_%7C_SSE-2563EB?style=for-the-badge" />
-
-</div>
-
----
-
 ## 📌 Engineering Keywords
 
 | Area | Keywords |
