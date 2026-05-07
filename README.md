@@ -63,7 +63,7 @@ flowchart LR
 <tr>
 <td width="50%" valign="top">
 
-### 🏦 Hana EZ Student Start Mode
+### 🏦 Student Start Mode Demo
 
 <img src="https://img.shields.io/badge/Finance%2FESG-Hana_EZ-008485?style=flat-square" />
 <img src="https://img.shields.io/badge/Team-4_people-57606A?style=flat-square" />
