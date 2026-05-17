@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:0F172A,50:0A7F45,100:2563EB&text=Sung%20JinHyuk&fontSize=44&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Product-minded%20Backend%20Developer&descAlignY=58&descSize=16" />
+<img src="./assets/NeonSign.gif" width="900" alt="Sung JinHyuk neon sign banner" />
 
 <br/>
 
