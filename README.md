@@ -65,11 +65,3 @@
 </a>
 
 </div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:0F172A,50:0A7F45,100:2563EB" />
-
-</div>
