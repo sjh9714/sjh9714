@@ -10,7 +10,7 @@
 <a href="https://portfolio-site-green-rho-42.vercel.app/resume">
   <img src="https://img.shields.io/badge/Resume-0A7F45?style=for-the-badge&logo=readme&logoColor=white" />
 </a>
-<a href="https://github.com/jinhyuk9714">
+<a href="https://github.com/sjh9714">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 <a href="https://www.acmicpc.net/user/jinhyuk9714">
@@ -48,7 +48,7 @@
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jinhyuk9714&theme=github_dark" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sjh9714&theme=github_dark" />
 
 </div>
 
