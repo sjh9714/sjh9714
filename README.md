@@ -7,6 +7,9 @@
 <a href="https://portfolio-site-green-rho-42.vercel.app/">
   <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
 </a>
+<a href="https://velog.io/@sjh9714">
+  <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=velog&logoColor=white" />
+</a>
 <a href="https://portfolio-site-green-rho-42.vercel.app/resume">
   <img src="https://img.shields.io/badge/Resume-0A7F45?style=for-the-badge&logo=readme&logoColor=white" />
 </a>
