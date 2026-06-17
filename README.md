@@ -37,15 +37,14 @@
 
 ## 👋 About Me
 
-사용자의 흩어진 문제를 서비스 흐름으로 정리하고,  
-백엔드와 AI를 활용해 실제로 동작하는 제품으로 만드는 개발자입니다.
+I turn scattered user problems into clear service flows, then build working products with backend systems and AI.
 
-- 🛠 Spring 기반 백엔드를 중심으로 인증, 예약, 파일 업로드, 동시성 제어, 성능 개선, AI 연동을 다뤄왔습니다.
-- 🌍 최근에는 오픈소스 프로젝트에서 실제 이슈를 재현하고, 회귀 테스트와 작은 diff로 문제를 해결하는 기여를 이어가고 있습니다.
-- 🤖 AI coding agent를 활용하되, 재현·테스트·리뷰 가능한 변경을 만드는 데 집중합니다.
-- 🏦 **2026 하나 청년 금융인재 양성 프로젝트** 본선 합격 및 활동
-- 🦁 **2024 멋쟁이사자처럼 12기 가톨릭대학교** 활동
-- 🎓 캠퍼스, 금융, 학습, 면접 준비처럼 실제 사용자 맥락이 있는 문제를 서비스로 풀어내는 데 관심이 있습니다.
+- 🛠 I mainly work with Spring-based backend systems, including authentication, reservations, file uploads, concurrency control, performance optimization, and AI integrations.
+- 🌍 Recently, I have been contributing to open-source projects by reproducing real issues, adding regression tests, and fixing them with small, focused diffs.
+- 🤖 I use AI coding agents, but I focus on making changes that are reproducible, testable, and reviewable.
+- 🏦 Selected as a finalist and participant in the **2026 Hana Youth Finance Talent Program**.
+- 🦁 Participated in **LIKELION 12th at the Catholic University of Korea** in 2024.
+- 🎓 I am interested in turning real user contexts—campus life, finance, learning, and interview preparation—into practical services.
 
 ---
 
