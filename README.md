@@ -49,6 +49,14 @@
 
 ---
 
+## Current OSS
+
+Building [Agent Gate for AI PRs](https://github.com/sjh9714/Agent-Gate), a deterministic CI gate for AI-generated pull requests.
+
+LLM reviewers help with judgment. Agent Gate verifies deterministic merge evidence.
+
+---
+
 ## 📊 GitHub Stats
 
 <div align="center">
