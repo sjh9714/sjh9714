@@ -46,16 +46,6 @@ I turn scattered user problems into clear service flows, then build working prod
 - 🦁 Participated in **LIKELION 12th at the Catholic University of Korea** in 2024.
 - 🎓 I am interested in turning real user contexts—campus life, finance, learning, and interview preparation—into practical services.
 
----
-
-## Current OSS
-
-Building [Agent Gate for AI PRs](https://github.com/sjh9714/Agent-Gate), a deterministic CI gate for AI-generated pull requests.
-
-LLM reviewers help with judgment. Agent Gate verifies deterministic merge evidence.
-
----
-
 ## 📊 GitHub Stats
 
 <div align="center">
