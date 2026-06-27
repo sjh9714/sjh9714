@@ -56,19 +56,6 @@ LLM reviewers help with judgment. Agent Gate verifies deterministic merge eviden
 
 ---
 
-## Featured Portfolio
-
-### [Finance AI Study Portfolio](https://github.com/sjh9714/hana_power_on_study)
-
-하나 청년 금융인재 양성 프로젝트에서 학습한 금융 데이터 분석, AI 챗봇, RAG, LangGraph Agent 실습을 공개 가능한 포트폴리오 구조로 재구성했습니다.
-
-- Python/Pandas 기반 금융 거래 데이터 EDA
-- FastAPI/Gradio 기반 AI 챗봇 데모
-- LangChain, RAG, Chroma, LangGraph Agent 실습
-- synthetic 샘플 데이터와 재생성 스크립트 기반 공개 재현 구조
-
----
-
 ## 📊 GitHub Stats
 
 <div align="center">
