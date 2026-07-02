@@ -8,3 +8,34 @@
   <img src="https://img.shields.io/badge/CUK-Catholic_University-1E3A8A?style=flat-square" alt="Catholic University of Korea" />
   <img src="https://img.shields.io/badge/Focus-Service_Problem_Solving-0A7F45?style=flat-square" alt="Focus: Service Problem Solving" />
 </p>
+
+---
+
+<h2 align="center">Proof of Work</h2>
+
+<p align="center">
+  I build Java/Spring backend systems and document the proof:
+  OSS fixes, backend write-ups, and measured portfolio cases.
+</p>
+
+<p align="center">
+  <a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3Asjh9714+-user%3Asjh9714">
+    <img src="https://img.shields.io/badge/Open_Source-Contributions-0A7F45?style=for-the-badge&logo=github&logoColor=white" alt="Open Source Contributions" />
+  </a>
+  <a href="https://velog.io/@sjh9714/posts">
+    <img src="https://img.shields.io/badge/Blog-Backend_Writeups-20C997?style=for-the-badge&logo=velog&logoColor=white" alt="Backend Writeups" />
+  </a>
+  <a href="https://new-portfolio-smoky-one-41.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-Java%2FSpring_Backend-1E3A8A?style=for-the-badge&logo=springboot&logoColor=white" alt="Java Spring Backend Portfolio" />
+  </a>
+</p>
+
+| Area | What it proves |
+| --- | --- |
+| [Open Source](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3Asjh9714+-user%3Asjh9714) | Reproducing issues, adding regression tests, and making small reviewable fixes |
+| [Blog](https://velog.io/@sjh9714/posts) | Backend learning notes, debugging records, and implementation write-ups |
+| [Backend Portfolio](https://new-portfolio-smoky-one-41.vercel.app) | Java/Spring projects explained with problem, cause, solution, and verification |
+
+<p align="center">
+  <sub>Tests, numbers, and reproducible evidence over vague self-description.</sub>
+</p>
