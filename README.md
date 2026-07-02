@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3Asjh9714+-user%3Asjh9714+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing+-org%3Akio-vibe+-org%3Agaga-studio">
+  <a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3Asjh9714+-user%3Asjh9714+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing+-org%3Akio-vibe+-org%3Agaga-studio+-repo%3Aardkyer%2Fborrow_me">
     <img src="https://img.shields.io/badge/Open_Source-Contributions-0A7F45?style=for-the-badge&logo=github&logoColor=white" alt="Open Source Contributions" />
   </a>
   <a href="https://velog.io/@sjh9714/posts">
