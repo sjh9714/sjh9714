@@ -1,5 +1,3 @@
-<br/><br/>
-
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=0A7F45&center=true&vCenter=true&width=720&lines=Product-minded+Backend+Developer;Backend+%C2%B7+AI+%C2%B7+Data+%C2%B7+Service+Flow;Hana+Youth+Finance+Project+%7C+LIKELION+12th+%40+CUK" alt="Typing SVG" />
 
 <br/>
