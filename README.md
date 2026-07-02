@@ -23,7 +23,7 @@
     <img src="https://img.shields.io/badge/Open_Source-Contributions-0A7F45?style=for-the-badge&logo=github&logoColor=white" alt="Open Source Contributions" />
   </a>
   <a href="https://velog.io/@sjh9714/posts">
-    <img src="https://img.shields.io/badge/Blog-Backend_Writeups-20C997?style=for-the-badge&logo=velog&logoColor=white" alt="Writeups" />
+    <img src="https://img.shields.io/badge/Blog-WRITE--UPS-20C997?style=for-the-badge&logo=velog&logoColor=white" alt="Blog Write-ups" />
   </a>
   <a href="https://new-portfolio-smoky-one-41.vercel.app">
     <img src="https://img.shields.io/badge/Portfolio-Java%2FSpring_Backend-1E3A8A?style=for-the-badge&logo=springboot&logoColor=white" alt="Java Spring Backend Portfolio" />
