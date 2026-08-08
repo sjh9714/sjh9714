@@ -31,7 +31,7 @@ text{font-family:"P","Pretendard",-apple-system,"Apple SD Gothic Neo","Malgun Go
   <g>
     <line x1="0" y1="292" x2="1200" y2="292" stroke="rgba(240,241,250,0.14)" stroke-width="1"/>
     <text x="0" y="332" class="year">2024</text>
-    <text x="128" y="326" class="title">LIKELION 12TH — CATHOLIC UNIVERSITY OF KOREA</text>
-    <text x="128" y="354" class="desc">팀으로 만들기의 시작</text>
+    <text x="128" y="326" class="title">LIKELION 12TH — CATHOLIC UNIVERSITY OF KOREA · BACKEND</text>
+    <text x="128" y="354" class="desc">8월 중앙해커톤(무박 2일) 참가 — 이후 편지 서비스 백엔드 커밋 최다, 교내 물품 대여의 알림 기능</text>
   </g>
 </svg>
