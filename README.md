@@ -5,18 +5,12 @@
 
 **Sung Jinhyuk — a backend developer who learns by shipping with teams.**
 
-- **FinMate · 2026** — Hana Financial Group × FSS youth finance talent program.
-  Built the service's app and its Spring Boot backend solo; every number on
-  screen derives from the transaction ledger.
-- **My ETA · 2026** — Hana × SK Telecom Tech4Good hackathon, 24 hours.
-  Navigation for people the standard walking speed lies to; 91% of the code is mine.
-- **LIKELION 12th · 2024** — Catholic University of Korea. Where building with a team started.
-- **In between** — a Java/Spring portfolio where every number links to a load
-  test, and side tools that keep AI coding agents honest.
+팀에서 만들며 배워 온 신입 백엔드 개발자 성진혁입니다. The pinned repos are the receipts.
 
-The pinned repos are the receipts.
-
-팀에서 만들며 배워 온 신입 백엔드 개발자 성진혁입니다.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg">
+  <img src="assets/experience-light.svg" alt="경험 — 백엔드 포트폴리오와 에이전트 도구, 2026 FinMate(하나 청년 금융인재, 앱·백엔드 단독 구현), 2026 My ETA(Tech4Good 24시간 해커톤, 커밋 91%), 2024 멋쟁이사자처럼 12기(가톨릭대)" width="100%">
+</picture>
 
 <!-- 링크 안에 개행을 두면 그 공백이 밑줄 달린 텍스트 노드로 렌더된다 — 한 줄로 붙인다 -->
 <p>
