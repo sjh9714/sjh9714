@@ -14,7 +14,7 @@
 
 <!-- 링크 안에 개행을 두면 그 공백이 밑줄 달린 텍스트 노드로 렌더된다 — 한 줄로 붙인다 -->
 <p>
-  <a href="https://sjh9714.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-portfolio-dark.svg"><img src="assets/pill-portfolio-light.svg" alt="Portfolio" height="44"></picture></a>&nbsp;<a href="https://sjh9714.tistory.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-blog-dark.svg"><img src="assets/pill-blog-light.svg" alt="Blog" height="44"></picture></a>&nbsp;<a href="mailto:jinhyuk9714@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-email-dark.svg"><img src="assets/pill-email-light.svg" alt="Email" height="44"></picture></a>
+  <a href="https://sjh9714.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-portfolio-dark.svg"><img src="assets/pill-portfolio-light.svg" alt="Portfolio" height="44"></picture></a>&nbsp;<a href="https://sjh9714.tistory.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-blog-dark.svg"><img src="assets/pill-blog-light.svg" alt="Blog" height="44"></picture></a>&nbsp;<a href="mailto:jinhyuk9714@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-email-dark.svg"><img src="assets/pill-email-light.svg" alt="Email" height="44"></picture></a>&nbsp;<a href="https://vluu.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-gallery-dark.svg"><img src="assets/pill-gallery-light.svg" alt="Gallery" height="44"></picture></a>
 </p>
 
 <picture>

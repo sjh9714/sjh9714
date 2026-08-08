@@ -8,10 +8,17 @@ import { readFileSync, writeFileSync } from "node:fs";
 
 const font = readFileSync("assets/stats-font.woff2").toString("base64");
 
+/*
+ * 폭은 눈대중이 아니라 폰트 메트릭에서 뽑는다. 기존 라벨의 글자 폭과 실제 폭 차이,
+ * 즉 좌우 여백은 길이에 따라 늘어난다 — BLOG(4자) 83.4, EMAIL(5자) 84.5,
+ * PORTFOLIO(9자) 97.4로 글자당 약 +2.8이다. GALLERY는 7자라 여백 약 91.8,
+ * 글자 폭 81.3을 더해 173.1이고 나머지가 전부 4의 배수이므로 172로 맞춘다.
+ */
 const PILLS = [
   { name: "portfolio", label: "PORTFOLIO", width: 200 },
   { name: "blog", label: "BLOG", width: 132 },
   { name: "email", label: "EMAIL", width: 140 },
+  { name: "gallery", label: "GALLERY", width: 172 },
 ];
 
 const THEMES = {
@@ -32,4 +39,5 @@ const svg = ({ label, width }, t) => `<svg xmlns="http://www.w3.org/2000/svg" vi
 for (const pill of PILLS)
   for (const [name, t] of Object.entries(THEMES))
     writeFileSync(`assets/pill-${pill.name}-${name}.svg`, svg(pill, t));
-console.log("필 버튼 6종 생성");
+// 개수는 PILLS에서 센다 — 손으로 적어두면 알약을 더할 때마다 조용히 어긋난다
+console.log(`필 버튼 ${PILLS.length * Object.keys(THEMES).length}종 생성`);
