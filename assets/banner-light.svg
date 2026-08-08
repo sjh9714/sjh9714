@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" role="img" aria-label="Sung Jinhyuk">
+  <style>
+    @font-face {
+      font-family: "PretendardBanner";
+      src: url(data:font/woff2;base64,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) format("woff2");
+      font-weight: 500;
+    }
+    text {
+      font-family: "PretendardBanner", Helvetica, Arial, sans-serif;
+      font-size: 150px;
+      font-weight: 500;
+      fill: #0a0b0d;
+    }
+    .track { animation: slide 50s linear infinite; }
+    @keyframes slide { to { transform: translateX(-2500px); } }
+    @media (prefers-reduced-motion: reduce) { .track { animation: none; } }
+  </style>
+  <g class="track">
+    <text x="0" y="172" textLength="2500" lengthAdjust="spacing">SUNG JINHYUK<tspan fill="#0016ec"> — </tspan>SUNG JINHYUK<tspan fill="#0016ec"> — </tspan></text>
+    <text x="2500" y="172" textLength="2500" lengthAdjust="spacing">SUNG JINHYUK<tspan fill="#0016ec"> — </tspan>SUNG JINHYUK<tspan fill="#0016ec"> — </tspan></text>
+  </g>
+</svg>
