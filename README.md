@@ -3,17 +3,20 @@
   <img src="assets/banner-light.svg" alt="Sung Jinhyuk" width="100%">
 </picture>
 
-**No one-line bio yet. I have receipts.**
+**Sung Jinhyuk — a backend developer who learns by shipping with teams.**
 
-I can't tell you what kind of developer I am — I haven't decided.
-I get curious, build the thing, and keep the evidence: backend systems
-load-tested until they stop lying, a cat that babysits AI coding agents,
-a security lab you can prompt-inject, navigation for people the standard
-walking speed lies to.
+- **FinMate · 2026** — Hana Financial Group × FSS youth finance talent program.
+  Built the service's app and its Spring Boot backend solo; every number on
+  screen derives from the transaction ledger.
+- **My ETA · 2026** — Hana × SK Telecom Tech4Good hackathon, 24 hours.
+  Navigation for people the standard walking speed lies to; 91% of the code is mine.
+- **LIKELION 12th · 2024** — Catholic University of Korea. Where building with a team started.
+- **In between** — a Java/Spring portfolio where every number links to a load
+  test, and side tools that keep AI coding agents honest.
 
-The pinned repos below are my current answer to "so, what do you do?"
+The pinned repos are the receipts.
 
-한 줄 소개가 아직 없어서, 만든 것들로 대신합니다.
+팀에서 만들며 배워 온 신입 백엔드 개발자 성진혁입니다.
 
 <!-- 링크 안에 개행을 두면 그 공백이 밑줄 달린 텍스트 노드로 렌더된다 — 한 줄로 붙인다 -->
 <p>
