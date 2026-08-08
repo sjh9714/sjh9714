@@ -26,6 +26,6 @@ The pinned repos below are my current answer to "so, what do you do?"
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/graph-dark.svg">
-  <img src="assets/graph-light.svg" alt="지난 1년의 GitHub 기여 그래프" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <img src="assets/activity-light.svg" alt="최근 12개월 기여 그래프 — 오실로스코프 스윕과 연속용지 플로터 장면이 번갈아 나온다" width="100%">
 </picture>
