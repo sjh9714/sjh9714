@@ -70,6 +70,32 @@ async function fetchCalendar() {
   return json.data.user.contributionsCollection.contributionCalendar;
 }
 
+/**
+ * 같은 답이 두 번 나올 때까지 읽는다.
+ *
+ * GitHub의 기여 API는 같은 요청에 다른 답을 준다. 2026-08-09에 같은 토큰으로 4초 간격
+ * 표본 4개를 뽑았더니 하나가 8월 4일을 1이 아닌 0으로 줬고, 그 날이 스트릭 경계라
+ * 12일이 5일로 바뀌었다(총 기여도 4,362 ↔ 4,363으로 흔들렸다). 계기판은 이 값을 매일
+ * 커밋하므로, 한 번 읽고 믿으면 흔들린 값이 그대로 화면에 박힌다.
+ *
+ * 끝내 합의가 안 되면 갱신하지 않고 실패한다 — 틀린 값을 조용히 싣는 것보다 낫다.
+ */
+async function fetchCalendarStable(tries = 6, gapMs = 3000) {
+  const seen = new Map();
+  for (let i = 0; i < tries; i += 1) {
+    const cal = await fetchCalendar();
+    const days = cal.weeks.flatMap((w) => w.contributionDays);
+    // 스트릭이 걸리는 꼬리 3주와 총합이 같으면 같은 답으로 본다
+    const key = `${cal.totalContributions}|${days.slice(-21).map((d) => d.contributionCount).join(",")}`;
+    if (seen.has(key)) return seen.get(key);
+    seen.set(key, cal);
+    if (i < tries - 1) await new Promise((r) => setTimeout(r, gapMs));
+  }
+  throw new Error(
+    `기여 API가 ${tries}번 모두 다른 값을 줬다 — 오늘은 계기판을 갱신하지 않는다`,
+  );
+}
+
 /* 오늘 기여가 아직 없어도 어제까지 이어졌으면 스트릭은 살아 있다 */
 function currentStreak(days) {
   let streak = 0;
@@ -280,7 +306,7 @@ ${reduce}</style>
 }
 
 /* ── 실행 ── */
-const calendar = await fetchCalendar();
+const calendar = await fetchCalendarStable();
 const days = calendar.weeks.flatMap((w) => w.contributionDays);
 const boj = await fetchBoj();
 const programmers = await fetchProgrammers();
