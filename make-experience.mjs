@@ -44,13 +44,13 @@ const ROWS = [
     // 제품(BorrowMe)은 지금 이어지지 않는다. 이 줄이 말하는 것은 그때의 경험이다.
     title: "GGUM HACKATHON",
     badges: ["11-PERSON TEAM", "2 DAYS"],
-    desc: "첫 백엔드 팀 프로젝트(교내 물품 대여) — 댓글·답글 알림과 REST 전환, 프론트 연동·시연",
+    desc: "BorrowMe — 첫 백엔드 팀 프로젝트에서 댓글·답글 알림과 REST 전환, 프론트 연동·시연",
   },
   {
     year: "2024",
     title: "LIKELION 12TH",
     badges: ["CATHOLIC UNIV", "BACKEND"],
-    desc: "아이디어톤 · 중앙해커톤 참가 — 편지 서비스 백엔드 커밋 최다",
+    desc: "아이디어톤 · 중앙해커톤 참가 — 편지 서비스 Memory of Year 백엔드 커밋 최다",
   },
 ];
 
