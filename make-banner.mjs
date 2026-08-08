@@ -28,18 +28,22 @@ const { unitsPerEm, glyphs } = JSON.parse(readFileSync("assets/banner-glyphs.jso
 const PHRASE = "SUNG JINHYUK — ";
 const SUB = "BACKEND ENGINEER · JAVA · SPRING";
 const NAME_SIZE = 150;
-const SUB_SIZE = 15;
-const SUB_LS = 3.2;
+const SUB_SIZE = 24;
+const SUB_LS = 4.4;
 const SPEED = 50; // px/s — 포트폴리오 마키와 같은 속도
 const COPIES = 6; // 3벌 밀면 제자리 — 넓은 화면도 절반(3벌)이 덮는다
 
 /*
  * 세로 배치. 대문자만 쓰므로 디센더가 없어 아래를 바짝 붙일 수 있다.
  * 처음엔 이름 위아래로 60px씩 뒀는데 빈 공간이 너무 컸다.
+ *
+ * 라벨 크기는 캔버스 폭 기준으로 잡을 것. 1200px 캔버스를 GitHub이 830px로 줄여
+ * 그리므로 여기 15px는 화면에서 10px가 되고, 창이 좁으면 7px까지 떨어져 안 보인다.
+ * 24px는 830px 지면에서 약 17px로 본문과 같은 급이 된다.
  */
-const SUB_BASELINE = 28;
-const NAME_BASELINE = 168;
-const HEIGHT = 196;
+const SUB_BASELINE = 38;
+const NAME_BASELINE = 186;
+const HEIGHT = 214;
 const WIDTH = 1200;
 
 /** 글자열을 패스 그룹으로 굽는다. 폭은 어드밴스 합이라 정확하다 */
