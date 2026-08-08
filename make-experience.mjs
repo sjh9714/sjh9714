@@ -35,7 +35,7 @@ const ROWS = [
   {
     year: "2024",
     title: "LIKELION 12TH — CATHOLIC UNIVERSITY OF KOREA · BACKEND",
-    desc: "아이디어톤 참가 · 중앙해커톤은 본선 진출 못 함 — 편지 서비스 백엔드 커밋 최다",
+    desc: "아이디어톤 · 중앙해커톤 참가 — 편지 서비스 백엔드 커밋 최다",
   },
 ];
 
