@@ -12,8 +12,9 @@
  * (피크가 수백이라 선형이면 평일 커밋이 바닥에 붙는다).
  *
  * 데이터 소스와 정직성 규칙
- * - GitHub: GraphQL contributionCalendar. GITHUB_TOKEN은 공개 기여만 세므로
- *   프로필 화면의 수치와 다를 수 있다 — 계기판에 갱신 날짜를 박는다.
+ * - GitHub: GraphQL contributionCalendar. **모양을 그리는 데만** 쓴다.
+ *   기여 수·스트릭은 계기판에서 뺐다 — GitHub의 표면끼리도 값이 어긋나
+ *   맞출 수가 없다(dashboard 주석에 실측 네 값을 남겨 뒀다).
  * - 백준: solved.ac API를 먼저 시도(티어 int까지 얻음). Cloudflare에 막히면
  *   mazassumnida 뱃지 SVG에서 rating·solved·진행표시를 파싱하고, 티어는
  *   solved.ac 공식 경계표(help.solved.ac/en/stats/ac-rating)로 환산하되
@@ -96,15 +97,6 @@ async function fetchCalendarStable(tries = 6, gapMs = 3000) {
   );
 }
 
-/* 오늘 기여가 아직 없어도 어제까지 이어졌으면 스트릭은 살아 있다 */
-function currentStreak(days) {
-  let streak = 0;
-  let i = days.length - 1;
-  if (i >= 0 && days[i].contributionCount === 0) i -= 1;
-  for (; i >= 0 && days[i].contributionCount > 0; i -= 1) streak += 1;
-  return streak;
-}
-
 /* ── 백준 ── */
 const TIER_NAMES = ["Unrated"];
 for (const t of ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Ruby"])
@@ -168,20 +160,31 @@ const style = (t) => `
   .label { font-size: 11.5px; letter-spacing: 2px; fill: ${t.muted}; }
   .note { font-size: 10px; letter-spacing: 1px; fill: ${t.muted}; }`;
 
-function dashboard(t, { total, streak, boj, programmers, date }) {
+/*
+ * 계기판은 **GitHub 밖 출처만** 싣는다.
+ *
+ * 전에는 기여 수와 스트릭이 앞 두 칸이었는데, 그 숫자를 맞출 방법이 없었다.
+ * 2026-08-09에 같은 순간을 네 군데서 재보니 전부 달랐다 —
+ * 프로필 위젯 4,971 · GraphQL(개인 토큰) 4,959 · GraphQL(Actions 토큰) 4,926 ·
+ * 계기판에 박혀 있던 값 4,202. GitHub의 두 공식 표면끼리도 어긋나고,
+ * API는 한동안 크게 틀린 값을 주기도 한다(4,202가 그것이다. 그날 기여는 35건뿐이라
+ * 시차로 설명되지 않는다). 「같은 답 두 번」 가드는 깜빡임은 잡아도 이건 못 잡는다.
+ *
+ * 게다가 기여 수는 GitHub이 이 계기판 바로 아래에서 더 정확하게 그린다. 그래서
+ * 우리 숫자는 정보를 더하지 않고 모순만 만들었다. GitHub 이야기는 GitHub에 맡긴다.
+ */
+function dashboard(t, { boj, programmers, date }) {
+  // 티어를 검증 못 하면 그 칸은 비운다. 레이팅을 두 칸에 겹쳐 적지 않는다.
   const chips = [
-    { value: fmt(total), label: "CONTRIBUTIONS · LAST 12 MONTHS" },
-    { value: `${streak}d`, label: "CURRENT STREAK" },
-    boj.tier
-      ? { value: boj.tier.toUpperCase(), label: `SOLVED.AC · RATING ${fmt(boj.rating)}` }
-      : { value: fmt(boj.rating), label: "SOLVED.AC RATING" },
-    programmers != null
-      ? { value: fmt(programmers), label: "PROGRAMMERS SCORE" }
-      : { value: fmt(boj.solved), label: "BAEKJOON SOLVED" },
+    ...(boj.tier ? [{ value: boj.tier.toUpperCase(), label: "SOLVED.AC TIER" }] : []),
+    { value: fmt(boj.rating), label: "SOLVED.AC RATING" },
+    { value: fmt(boj.solved), label: "BAEKJOON SOLVED" },
+    ...(programmers != null ? [{ value: fmt(programmers), label: "PROGRAMMERS SCORE" }] : []),
   ];
   const W = 1200;
-  const colW = 288;
-  const gap = (W - colW * 4) / 3;
+  const n = chips.length;
+  const gap = 40;
+  const colW = (W - gap * (n - 1)) / n;
   const cols = chips
     .map((c, i) => {
       const x = i * (colW + gap);
@@ -193,7 +196,7 @@ function dashboard(t, { total, streak, boj, programmers, date }) {
     })
     .join("\n  ");
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} 132" role="img"
-  aria-label="GitHub ${fmt(total)} contributions in the last 12 months, ${streak} day streak. solved.ac ${boj.tier ?? `rating ${fmt(boj.rating)}`}. ${programmers != null ? `Programmers score ${fmt(programmers)}` : `Baekjoon ${fmt(boj.solved)} solved`}">
+  aria-label="solved.ac ${boj.tier ?? ""} 레이팅 ${fmt(boj.rating)}, 백준 ${fmt(boj.solved)}문제 해결${programmers != null ? `, 프로그래머스 점수 ${fmt(programmers)}` : ""}">
   <style>${style(t)}</style>
   ${cols}
   <text x="${W}" y="128" text-anchor="end" class="note">UPDATED DAILY BY GITHUB ACTIONS · ${date}</text>
@@ -202,7 +205,13 @@ function dashboard(t, { total, streak, boj, programmers, date }) {
 }
 
 /* ── 그래프: 텔레메트리 ↔ 플로터 장면 전환 (34s 마스터 타임라인) ── */
-function activity(t, days, total) {
+/*
+ * 그래프는 **모양만** 말한다. 합계를 찍지 않는다 —
+ * 바로 아래 GitHub이 같은 기간의 잔디를 직접 그리는데 숫자가 서로 맞지 않기 때문이다
+ * (위 dashboard 주석 참조). 하루치가 틀려도 1년 곡선의 모양은 흔들리지 않으므로,
+ * 숫자를 주장하지 않으면 어긋날 것도 없다.
+ */
+function activity(t, days) {
   const W = 1200, H = 260;
 
   /* 장면 A — 텔레메트리 스윕 */
@@ -250,7 +259,7 @@ function activity(t, days, total) {
    * draw는 dashoffset 기본 0(완성), head·장면B는 기본 opacity 0.
    */
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img"
-  aria-label="최근 12개월 기여 그래프 — 7일 평균 라인과 일별 인쇄 장면이 번갈아 나온다. 합계 ${fmt(total)}">
+  aria-label="최근 12개월 기여 그래프 — 7일 평균 라인과 일별 인쇄 장면이 번갈아 나온다">
 <style>${fontFace}
 text{fill:${t.fg}}
 .lbl{font-size:11px;letter-spacing:2px;fill:${t.muted}}
@@ -299,7 +308,6 @@ ${reduce}</style>
   <line x1="${bx0}" y1="${bBase}" x2="${bx1}" y2="${bBase}" stroke="${t.fg}" stroke-width="1.4"/>
   <g class="carriage"><rect x="${bx0 - 9}" y="52" width="18" height="10" rx="2" fill="${t.fg}"/><line x1="${bx0}" y1="62" x2="${bx0}" y2="${bBase}" stroke="${t.fg}" stroke-width="1" opacity="0.45"/></g>
   <text x="${bx0}" y="40" class="lbl">CONTRIBUTIONS.LOG · LAST 12 MONTHS · 1 BAR = 1 DAY · √ SCALE</text>
-  <text x="${bx1}" y="40" class="lbl" text-anchor="end">TOTAL ${fmt(total)}</text>
 </g>
 </svg>
 `;
@@ -311,8 +319,6 @@ const days = calendar.weeks.flatMap((w) => w.contributionDays);
 const boj = await fetchBoj();
 const programmers = await fetchProgrammers();
 const data = {
-  total: calendar.totalContributions,
-  streak: currentStreak(days),
   boj,
   programmers,
   date: days.at(-1).date, // 달력의 마지막 날 — 로컬 시계가 아니라 데이터의 시점
@@ -320,10 +326,10 @@ const data = {
 
 for (const [name, t] of Object.entries(THEMES)) {
   writeFileSync(`assets/dashboard-${name}.svg`, dashboard(t, data));
-  writeFileSync(`assets/activity-${name}.svg`, activity(t, days, data.total));
+  writeFileSync(`assets/activity-${name}.svg`, activity(t, days));
 }
 console.log(
-  `갱신 — contributions ${fmt(data.total)} · streak ${data.streak}d · solved.ac ${boj.tier ?? "(티어 검증 불가)"} ${fmt(boj.rating)} · ${
-    programmers != null ? `programmers ${fmt(programmers)}` : `programmers 미설정 → BOJ solved ${fmt(boj.solved)} 폴백`
-  }`,
+  `갱신 — solved.ac ${boj.tier ?? "(티어 검증 불가)"} ${fmt(boj.rating)} · BOJ ${fmt(boj.solved)}문제 · ${
+    programmers != null ? `programmers ${fmt(programmers)}` : "programmers 미설정"
+  } · 그래프는 ${days.length}일치 모양만`,
 );

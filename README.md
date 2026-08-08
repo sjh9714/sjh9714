@@ -15,7 +15,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/dashboard-dark.svg">
-  <img src="assets/dashboard-light.svg" alt="GitHub 최근 12개월 기여·스트릭과 백준 solved·solved.ac 레이팅 계기판" width="100%">
+  <img src="assets/dashboard-light.svg" alt="solved.ac 티어와 레이팅, 백준 해결 문제 수, 프로그래머스 점수 계기판" width="100%">
 </picture>
 
 <picture>
