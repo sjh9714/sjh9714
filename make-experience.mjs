@@ -49,7 +49,7 @@ const ROWS = [
   {
     year: "2024",
     title: "LIKELION 12TH",
-    badges: ["CUK", "BACKEND"],
+    badges: ["CATHOLIC UNIV", "BACKEND"],
     desc: "아이디어톤 · 중앙해커톤 참가 — 편지 서비스 백엔드 커밋 최다",
   },
 ];

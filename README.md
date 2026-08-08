@@ -9,7 +9,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg">
-  <img src="assets/experience-light.svg" alt="경험 — 백엔드 포트폴리오와 에이전트 도구, 2026 청년 금융인재 프로그램(하나금융그룹·금융감독원)에서 FinMate 앱과 백엔드 단독 구현, 2026 Tech4Good 해커톤(하나금융그룹·SK텔레콤, 24시간)에서 My ETA 커밋 91%, 2024 GGUM 해커톤(11인 팀, 2일), 2024 멋쟁이사자처럼 12기(가톨릭대 백엔드)" width="100%">
+  <img src="assets/experience-light.svg" alt="경험 — 백엔드 포트폴리오와 에이전트 도구, 2026 청년 금융인재 프로그램(하나금융그룹·금융감독원)에서 FinMate 앱과 백엔드 단독 구현, 2026 Tech4Good 해커톤(하나금융그룹·SK텔레콤, 24시간)에서 My ETA 커밋 91%, 2024 GGUM 해커톤(11인 팀, 2일), 2024 멋쟁이사자처럼 12기(가톨릭대학교 백엔드)" width="100%">
 </picture>
 
 <!-- 링크 안에 개행을 두면 그 공백이 밑줄 달린 텍스트 노드로 렌더된다 — 한 줄로 붙인다 -->
