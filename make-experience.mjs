@@ -15,7 +15,7 @@ const ROWS = [
   {
     year: "NOW",
     title: "BACKEND PORTFOLIO · AGENT TOOLS",
-    desc: "모든 수치가 부하 테스트 근거로 연결되는 Java·Spring 포트폴리오, AI 코딩 에이전트를 감시하는 도구들",
+    desc: "모든 수치가 부하 테스트 근거로 연결되는 Java·Spring 포트폴리오, 2024년 팀 코드를 다시 연 BorrowMe, AI 에이전트 감시 도구",
   },
   {
     year: "2026",
@@ -29,8 +29,13 @@ const ROWS = [
   },
   {
     year: "2024",
+    title: "BORROWME — GGUM HACKATHON · 11-PERSON TEAM",
+    desc: "첫 백엔드 팀 프로젝트 — 댓글·답글 알림과 REST 전환을 맡고 프론트 연동·시연 (2주 준비 · 1박 2일)",
+  },
+  {
+    year: "2024",
     title: "LIKELION 12TH — CATHOLIC UNIVERSITY OF KOREA · BACKEND",
-    desc: "아이디어톤 참가 · 중앙해커톤은 본선 진출 못 함 — 편지 서비스 백엔드 커밋 최다, 교내 물품 대여의 알림 기능",
+    desc: "아이디어톤 참가 · 중앙해커톤은 본선 진출 못 함 — 편지 서비스 백엔드 커밋 최다",
   },
 ];
 
@@ -72,8 +77,10 @@ function svg(t) {
     <text x="128" y="${y + 62}" class="desc">${r.desc}</text>
   </g>`;
   }).join("\n  ");
+  // 라벨은 ROWS에서 만든다 — 손으로 적으면 행을 고칠 때마다 조용히 어긋난다
+  const label = ROWS.map((r) => `${r.year} ${r.title}: ${r.desc}`).join(" / ");
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img"
-  aria-label="경험 — 백엔드 포트폴리오와 에이전트 도구, 2026 FinMate(하나 청년 금융인재), 2026 My ETA(Tech4Good 해커톤), 2024 멋쟁이사자처럼 12기">
+  aria-label="경험 — ${label}">
 <style>
 @font-face{font-family:"P";src:url(data:font/woff2;base64,${font}) format("woff2");font-weight:500}
 text{font-family:"P","Pretendard",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",Helvetica,Arial,sans-serif}
