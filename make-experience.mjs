@@ -15,7 +15,7 @@ const ROWS = [
   {
     year: "NOW",
     title: "BACKEND PORTFOLIO · AGENT TOOLS",
-    desc: "모든 수치가 부하 테스트 근거로 연결되는 Java·Spring 포트폴리오, 2024년 팀 코드를 다시 연 BorrowMe, AI 에이전트 감시 도구",
+    desc: "모든 수치가 부하 테스트 근거로 연결되는 Java·Spring 포트폴리오, AI 코딩 에이전트를 감시하는 도구들",
   },
   {
     year: "2026",
@@ -29,8 +29,10 @@ const ROWS = [
   },
   {
     year: "2024",
-    title: "BORROWME — GGUM HACKATHON · 11-PERSON TEAM",
-    desc: "첫 백엔드 팀 프로젝트 — 댓글·답글 알림과 REST 전환을 맡고 프론트 연동·시연 (2주 준비 · 1박 2일)",
+    // 제품(BorrowMe)은 지금 이어지지 않는다. 이 줄이 말하는 것은 그때의 경험이므로
+    // 행사를 앞에 세우고 제품명은 맥락으로만 남긴다.
+    title: "GGUM HACKATHON · 11-PERSON TEAM",
+    desc: "첫 백엔드 팀 프로젝트(교내 물품 대여) — 댓글·답글 알림과 REST 전환, 프론트 연동·시연",
   },
   {
     year: "2024",
