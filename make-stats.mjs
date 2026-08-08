@@ -27,10 +27,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 
 const GITHUB_LOGIN = "sjh9714";
 const BOJ_HANDLE = "jinhyuk9714";
-const PROGRAMMERS_SVG_URLS = [
-  `https://raw.githubusercontent.com/${GITHUB_LOGIN}/PROGRAMMERS-BADGE/master/static/result.svg`,
-  `https://raw.githubusercontent.com/${GITHUB_LOGIN}/programmers-badge/master/static/result.svg`,
-];
+const PROGRAMMERS_SVG_URL = `https://raw.githubusercontent.com/${GITHUB_LOGIN}/programmers-badge-v1/master/static/result.svg`;
 const TOKEN = process.env.GITHUB_TOKEN;
 if (!TOKEN) throw new Error("GITHUB_TOKEN이 필요하다");
 
@@ -122,20 +119,19 @@ async function fetchBoj() {
   return { solved, rating, tier };
 }
 
-/* ── 프로그래머스 (사용자 셋업 필요 — 없으면 null) ── */
+/* ── 프로그래머스 — 포크한 programmers-badge-v1이 로그인해 만든 result.svg를 파싱 ── */
 async function fetchProgrammers() {
-  for (const url of PROGRAMMERS_SVG_URLS) {
-    try {
-      const res = await fetch(url);
-      if (!res.ok) continue;
-      const svg = await res.text();
-      const m = svg.match(/(?:score|점수)[^0-9]{0,40}([\d,]{2,})/i);
-      if (m) return Number(m[1].replaceAll(",", ""));
-    } catch {
-      /* 다음 후보 */
-    }
+  try {
+    const res = await fetch(PROGRAMMERS_SVG_URL);
+    if (!res.ok) return null;
+    const svg = await res.text();
+    // 포크 직후에는 원작자(JH8459)의 낡은 결과가 남아 있다 — 주인이 바뀌기 전엔 쓰지 않는다
+    if (/class="title_id"[^>]*>\s*JH8459\s*</.test(svg)) return null;
+    const m = svg.match(/>Score<\/text>[\s\S]{0,400}?class="value"[^>]*>([\d,]+)</);
+    return m ? Number(m[1].replaceAll(",", "")) : null;
+  } catch {
+    return null;
   }
-  return null;
 }
 
 /* ── 계기판 ── */
