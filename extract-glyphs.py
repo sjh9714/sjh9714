@@ -24,7 +24,7 @@ glyphset = font.getGlyphSet()
 cmap = font.getBestCmap()
 
 if mode == "paths":
-    chars = "SUNGJIHYK— "
+    chars = "".join(chr(c) for c in range(0x41, 0x5B)) + " —·"
 elif mode == "advances":
     chars = "".join(chr(c) for c in range(0x20, 0x7F))
 else:

@@ -1,11 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Sung Jinhyuk" width="100%">
+  <img src="assets/banner-light.svg" alt="Sung Jinhyuk — 백엔드 엔지니어 · Java · Spring" width="100%">
 </picture>
-
-**Sung Jinhyuk — a backend developer who learns by shipping with teams.**
-
-팀에서 만들며 배워 온 신입 백엔드 개발자 성진혁입니다. The pinned repos are the receipts.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg">
