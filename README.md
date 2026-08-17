@@ -71,7 +71,6 @@ AI 에이전트가 한 말과 실제로 한 일 사이의 간격을 좁히는 �
 - [코딩 장벽은 사라졌는데, 다른 벽이 보이기 시작했다 - 바이브 코딩 6개월](https://sjh9714.tistory.com/14)
 - [AI 슬롭 - 품질이 아니라 신뢰가 문제다](https://sjh9714.tistory.com/13)
 - [컴퓨터구조 다시 공부해보기](https://sjh9714.tistory.com/12)
-- [요즘 자꾸 보이는 하네스, 루프, 그래프가 뭔지 공부해봤다](https://sjh9714.tistory.com/11)
-<!-- BLOG-POST-LIST:END -->
+- [요즘 자꾸 보이는 하네스, 루프, 그래프가 뭔지 공부해봤다](https://sjh9714.tistory.com/11)<!-- BLOG-POST-LIST:END -->
 
 <sub>통계 카드는 매일 06:00 KST 에 GitHub Action 이 다시 그려 이 리포에 커밋한다. 글 목록은 블로그 RSS 를 읽어 갱신한다. 남의 서버가 죽어도 안 깨진다.</sub>
