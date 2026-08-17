@@ -58,6 +58,10 @@ jobs:
           # 쓰지도 않는 언어가 상위로 올라온다.
           EXCLUDE_REPOS: sjh9714/sjh9714
 
+      # 이 액션은 실행할 때 출력 폴더를 통째로 비운다. 두 번째 실행이 첫 번째가
+      # 만든 default 를 지워버려서, 사이에 빼뒀다가 끝나고 되돌린다.
+      - run: cp -r profile-summary-card-output/default "$RUNNER_TEMP/default-theme"
+
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -67,6 +71,10 @@ jobs:
           THEME: github_dark
           AUTO_PUSH: false
           EXCLUDE_REPOS: sjh9714/sjh9714
+
+      - run: |
+          mkdir -p profile-summary-card-output/default
+          cp -r "$RUNNER_TEMP/default-theme/." profile-summary-card-output/default/
 
       - name: 쓰지 않는 테마를 지우고 한 번에 커밋한다
         run: |
