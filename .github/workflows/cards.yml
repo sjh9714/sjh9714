@@ -43,3 +43,6 @@ jobs:
           max_post_count: 5
           template: "$newline- [$title]($url)"
           commit_message: "chore: 블로그 최근 글을 갱신한다"
+          # 티스토리는 Accept 가 application/rss+xml 이면 406 을 준다.
+          # UA 는 상관없고 이 헤더만 문제라서 */* 로 바꾼다.
+          accept_header: "*/*"
