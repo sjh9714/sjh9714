@@ -34,6 +34,9 @@ jobs:
           EXCLUDE_REPOS: sjh9714/sjh9714
 
   blog-posts:
+    # 두 잡이 같은 브랜치에 커밋한다. 동시에 돌리면 늦게 끝난 쪽의
+    # git push 가 거부당한다(실제로 한 번 겪었다). 순서대로 돌린다.
+    needs: summary-cards
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
