@@ -1,0 +1,52 @@
+# 통계 카드를 SVG 로 만들어 리포에 커밋한다.
+#
+# 왜 호스팅 위젯을 안 쓰나 — 2026-08 기준 github-readme-stats 공식 인스턴스는 503,
+# github-profile-trophy 는 402(할당량 초과)다. 남의 Vercel 무료 할당량에 프로필이
+# 매달려 있으면 어느 날 조용히 깨진다. 여기서 만들어 커밋하면 안 깨진다.
+#
+# 커밋 주체는 github-actions[bot] — 사람 커밋으로 위장하면 잔디가 거짓말이 된다.
+name: cards
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 매일 06:00 KST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/cards.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  summary-cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          UTC_OFFSET: 9
+          # 프로필 리포 자신은 언어 통계에서 뺀다. 워크플로가 만든 SVG 때문에
+          # 쓰지도 않는 언어가 상위로 올라온다.
+          EXCLUDE_REPOS: sjh9714/sjh9714
+
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg
+            dist/snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
