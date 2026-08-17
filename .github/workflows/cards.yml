@@ -1,4 +1,4 @@
-# 통계 카드를 SVG 로 만들어 리포에 커밋한다.
+# 통계 카드를 SVG 로 만들어 리포에 커밋하고, 블로그 최근 글을 README 에 써넣는다.
 #
 # 왜 호스팅 위젯을 안 쓰나 — 2026-08 기준 github-readme-stats 공식 인스턴스는 503,
 # github-profile-trophy 는 402(할당량 초과)다. 남의 Vercel 무료 할당량에 프로필이
@@ -33,20 +33,13 @@ jobs:
           # 쓰지도 않는 언어가 상위로 올라온다.
           EXCLUDE_REPOS: sjh9714/sjh9714
 
-  snake:
+  blog-posts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Platane/snk@v3
-        id: snake
+      - uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake-light.svg
-            dist/snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          feed_list: "https://sjh9714.tistory.com/rss"
+          max_post_count: 5
+          template: "$newline- [$title]($url)"
+          commit_message: "chore: 블로그 최근 글을 갱신한다"

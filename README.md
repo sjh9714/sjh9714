@@ -5,10 +5,7 @@
 **Java·Spring 백엔드** · **AI 에이전트 도구**
 가톨릭대학교 컴퓨터공학 3학년
 
-<a href="https://sjh9714.tistory.com"><img src="https://img.shields.io/badge/Blog-000000?style=for-the-badge&logo=tistory&logoColor=white" alt="Blog"></a>
-<a href="https://sjh9714.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
-<a href="mailto:jinhyuk9714@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-<img src="https://komarev.com/ghpvc/?username=sjh9714&style=for-the-badge&color=555555&label=visitors" alt="방문자">
+<p><a href="https://sjh9714.tistory.com"><img src="https://img.shields.io/badge/Blog-000000?style=for-the-badge&logo=tistory&logoColor=white" alt="Blog"></a> <a href="https://sjh9714.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a> <a href="mailto:jinhyuk9714@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a> <img src="https://komarev.com/ghpvc/?username=sjh9714&style=for-the-badge&color=555555&label=visitors" alt="방문자"></p>
 
 <br>
 
@@ -55,7 +52,7 @@ AI 에이전트가 한 말과 실제로 한 일 사이의 간격을 좁히는 �
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/0-profile-details.svg">
-  <img src="./profile-summary-card-output/default/0-profile-details.svg" width="100%" alt="프로필 요약 — 커밋, 리포, 사용 언어">
+  <img src="./profile-summary-card-output/default/0-profile-details.svg" width="100%" alt="프로필 요약 - 커밋, 리포, 사용 언어">
 </picture>
 
 <picture>
@@ -67,18 +64,14 @@ AI 에이전트가 한 말과 실제로 한 일 사이의 간격을 좁히는 �
   <img src="./profile-summary-card-output/default/2-most-commit-language.svg" height="200" alt="커밋이 많은 언어">
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/3-stats.svg">
-  <img src="./profile-summary-card-output/default/3-stats.svg" height="200" alt="기여 통계">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/4-productive-time.svg">
-  <img src="./profile-summary-card-output/default/4-productive-time.svg" height="200" alt="시간대별 커밋 분포">
-</picture>
+## 최근 글
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sjh9714/sjh9714/output/snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/sjh9714/sjh9714/output/snake-light.svg" width="100%" alt="최근 1년 기여 그래프">
-</picture>
+<!-- BLOG-POST-LIST:START -->
+- [내 클로드 코드 세팅](https://sjh9714.tistory.com/15)
+- [코딩 장벽은 사라졌는데, 다른 벽이 보이기 시작했다 - 바이브 코딩 6개월](https://sjh9714.tistory.com/14)
+- [AI 슬롭 - 품질이 아니라 신뢰가 문제다](https://sjh9714.tistory.com/13)
+- [컴퓨터구조 다시 공부해보기](https://sjh9714.tistory.com/12)
+- [요즘 자꾸 보이는 하네스, 루프, 그래프가 뭔지 공부해봤다](https://sjh9714.tistory.com/11)
+<!-- BLOG-POST-LIST:END -->
 
-<sub>카드는 매일 06:00 KST 에 GitHub Action 이 다시 그려 이 리포에 커밋합니다. 남의 서버가 죽어도 안 깨집니다.</sub>
+<sub>통계 카드는 매일 06:00 KST 에 GitHub Action 이 다시 그려 이 리포에 커밋한다. 글 목록은 블로그 RSS 를 읽어 갱신한다. 남의 서버가 죽어도 안 깨진다.</sub>
