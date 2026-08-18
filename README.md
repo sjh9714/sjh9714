@@ -2,9 +2,10 @@
 <h3 align="center">Backend Developer</h3>
 
 <p align="center">
-  <a href="https://sjh9714.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white"/></a>
-  <a href="https://sjh9714.tistory.com"><img src="https://img.shields.io/badge/Blog-000000?style=flat-square&logo=tistory&logoColor=white"/></a>
-  <a href="mailto:jinhyuk9714@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
+  <a href="https://sjh9714.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+  <a href="https://sjh9714.tistory.com"><img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=tistory&logoColor=white"/></a>
+  <a href="https://github.com/pulls?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%3Apr%2Bauthor%3Asjh9714%2Bis%3Amerged%2B-user%3Asjh9714%2B-org%3Agaga-studio%2B-org%3Atech4good-2026&query=%24.total_count&label=OSS%20merged%20PRs&style=for-the-badge&color=6e40c9&logo=github&logoColor=white"/></a>
+  <a href="https://vluu.vercel.app"><img src="https://img.shields.io/badge/Gallery-111111?style=for-the-badge&logo=googlephotos&logoColor=white"/></a>
 </p>
 
 <br/>
@@ -112,6 +113,18 @@
 - **재연결 보충**: 끊겼다 돌아온 사용자가 마지막 수신 ID 를 기준으로 놓친 구간만 따라잡도록 구현
 
 🔗 https://github.com/sjh9714/realtime-chat
+
+<br/>
+
+## 📊 Stats
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/3-stats.svg">
+  <img src="./profile-summary-card-output/default/3-stats.svg" height="200" alt="기여 통계 - 별, 커밋, PR, 이슈, 기여한 리포">
+</picture>
+<a href="https://solved.ac/sjh9714">
+  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=sjh9714" height="200" alt="백준 solved.ac 티어와 푼 문제 수">
+</a>
 
 <br/>
 
