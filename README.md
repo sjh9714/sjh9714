@@ -140,17 +140,6 @@
 
 <br/>
 
-### 그 외
-
-| 프로젝트 | 다룬 것 |
-|---|---|
-| [TrafficLab](https://github.com/sjh9714/TrafficLab) | 좌석 경합 시나리오를 직접 실행해 `UNSAFE` · 낙관 · 비관 · Redis 락 네 전략의 중복 예약과 latency 를 나란히 비교하는 실험 플랫폼 |
-| [ai-usage-billing-gateway](https://github.com/sjh9714/ai-usage-billing-gateway) | 멀티테넌트 AI 사용량 과금. Idempotency-Key 로 중복 계량 차단, HMAC 서명 검증, 잔액을 덮어쓰지 않는 append-only 원장 |
-| [interview-coach](https://github.com/sjh9714/interview-coach) | JD 분석부터 모의 면접 · SSE 피드백까지. Spring Boot 5개 서비스와 Next.js |
-| [Social_Login](https://github.com/sjh9714/Social_Login) | OAuth2 · JWT · Redis 인증 흐름. Refresh Token 저장·검증·삭제와 Google 소셜 로그인 |
-
-<br/>
-
 ## ✍️ Recent Posts
 
 <!-- BLOG-POST-LIST:START -->
