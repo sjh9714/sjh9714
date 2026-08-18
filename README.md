@@ -119,11 +119,11 @@
 ## 📊 Stats
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/3-stats.svg">
-  <img src="./profile-summary-card-output/default/3-stats.svg" height="200" alt="기여 통계 - 별, 커밋, PR, 이슈, 기여한 리포">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-salesp07.vercel.app/api?username=sjh9714&show_icons=true&include_all_commits=true&rank_icon=percentile&hide_border=true&theme=github_dark">
+  <img src="https://github-readme-stats-salesp07.vercel.app/api?username=sjh9714&show_icons=true&include_all_commits=true&rank_icon=percentile&hide_border=true" height="195" alt="GitHub 통계 - 별, 커밋, PR, 이슈와 등급">
 </picture>
 <a href="https://solved.ac/jinhyuk9714">
-  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=jinhyuk9714" height="200" alt="백준 solved.ac 티어와 푼 문제 수">
+  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=jinhyuk9714" height="195" alt="백준 solved.ac 티어와 푼 문제 수">
 </a>
 
 <br/>

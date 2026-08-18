@@ -1,4 +1,4 @@
-# 기여 통계 카드를 SVG 로 만들어 커밋하고, 블로그 최근 글을 README 에 써넣는다.
+# 블로그 최근 글을 README 에 써넣는다.
 # 커밋 주체는 github-actions[bot] — 사람 커밋으로 위장하면 잔디가 거짓말이 된다.
 name: cards
 
@@ -34,40 +34,6 @@ jobs:
           accept_header: "*/*"
           skip_commit: true
           enable_keepalive: false
-
-      # THEME 을 비우면 65개 테마를 전부 만든다. README 는 두 개만 쓰므로 하나씩
-      # 지정해 두 번 돌린다. 두 번째 실행이 출력 폴더를 통째로 비우므로 사이에
-      # default 를 빼뒀다가 되돌린다. 커밋은 마지막에 한 번만 한다.
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          UTC_OFFSET: 9
-          THEME: default
-          AUTO_PUSH: false
-          EXCLUDE_REPOS: sjh9714/sjh9714
-
-      - run: cp -r profile-summary-card-output/default "$RUNNER_TEMP/default-theme"
-
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          UTC_OFFSET: 9
-          THEME: github_dark
-          AUTO_PUSH: false
-          EXCLUDE_REPOS: sjh9714/sjh9714
-
-      - name: 쓰는 것만 남긴다
-        run: |
-          mkdir -p profile-summary-card-output/default
-          cp -r "$RUNNER_TEMP/default-theme/." profile-summary-card-output/default/
-          find profile-summary-card-output -mindepth 1 -maxdepth 1 -type d \
-            ! -name default ! -name github_dark -exec rm -rf {} +
-          find profile-summary-card-output -type f ! -name '3-stats.svg' -delete
-          find profile-summary-card-output -type d -empty -delete
 
       - name: 바뀐 게 있으면 커밋한다
         run: |
