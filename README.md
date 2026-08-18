@@ -85,27 +85,69 @@
 
 ## 💻 Backend Portfolio
 
-> 동시성 · 정합성 · 실시간 전달을 주제로 직접 만들고 측정한 개인 프로젝트입니다.
-> 전체 내용은 [sjh9714.vercel.app](https://sjh9714.vercel.app) · 소스는 [backend-portfolio](https://github.com/sjh9714/backend-portfolio) 에 있습니다.
+> 동시성 · 정합성 · 실시간 전달 · 분산 트랜잭션을 주제로 직접 만들고 측정한 개인 프로젝트입니다.
+> 정리된 화면은 [sjh9714.vercel.app](https://sjh9714.vercel.app) 에 있습니다.
 
 ### 1. 좌석 예약 시스템 | 대기열 · 락 전략 · 이벤트 전달
-> **Role:** 설계 · 구현 · 측정 전체 · **기간:** 2026.02 ~ 2026.05
+> **Role:** 설계 · 구현 · 측정 전체 · **기간:** 2026.02 ~ 2026.05 · **Stack:** Java · Spring Boot · PostgreSQL · Redis · React
 
 - **중복 판매 차단**: 같은 좌석에 100명이 몰릴 때 나던 oversell 을 락 3종을 비교해 0건으로, p95 는 106–215ms 로 실측
 - **경합 원인 규명**: 다른 좌석인데 예매가 서로 실패하던 원인이 잔여석 카운터 한 줄임을 밝혀 성공률 40% → 100%
 - **매진 좌석 선필터**: 매진된 좌석 요청까지 DB 를 잡던 것을 Redis 에서 미리 걸러 쓰기 p95 37ms → 6ms, 총 RPS 969 → 1,005
-- **대기열 전달**: 순번을 SSE 로 내려보내고, 토큰 응답이 유실돼 재요청해도 예매는 한 건만 생기도록 멱등 처리
+- **대기열과 멱등성**: 순번을 SSE 로 내려보내고, 토큰 응답이 유실돼 재요청해도 예매는 한 건만 생기도록 처리
+- **이벤트 전달**: Outbox 로 예매 확정 이벤트를 흘려보내 후속 처리와 예매 트랜잭션을 분리
+
+🔗 https://github.com/sjh9714/concert-booking
 
 <br/>
 
 ### 2. 실시간 채팅 서버 | 다중 인스턴스 · 영속화 · 전달 검증
-> **Role:** 설계 · 구현 · 측정 전체 · **기간:** 2026.02 ~ 2026.05
+> **Role:** 설계 · 구현 · 측정 전체 · **기간:** 2026.02 ~ 2026.05 · **Stack:** Java · Spring Boot · STOMP · Redis · React
 
 - **전달 보장**: DB 커밋이 끝난 뒤에만 브로드캐스트하도록 순서를 강제. 50명이 두 인스턴스에 나뉜 3회 반복에서 기대 4,900건 전부 도착, 누락·중복·순서 위반 0건
 - **N+1 제거**: 채팅방 목록이 방 개수만큼 쿼리를 날리던 것을 JPQL 프로젝션과 IN 배치로 모아 방 50개 기준 101회 → 3회 고정
 - **인덱스 설계**: 커서 페이지네이션 · 멱등성 · unread 쿼리를 EXPLAIN ANALYZE 로 분석해 인덱스 5개 추가, 이미 커버되는 3개는 근거를 적고 추가하지 않음
 - **부하 측정**: 200 VU 조회 부하 3회 반복에서 RPS 1,806–1,940 · p95 129–133ms · 39.8만 요청 중 HTTP 실패 0건
-- **구독 버그 수정**: Redis 패턴 구독이 수신 채널명을 목적지로 쓰던 것을 payload 기준으로 고쳐 다른 방으로 새던 메시지를 막고 단위 테스트로 고정
+- **재연결 보충**: 끊겼다 돌아온 사용자가 마지막 수신 ID 를 기준으로 놓친 구간만 따라잡도록 구현
+
+🔗 https://github.com/sjh9714/realtime-chat
+
+<br/>
+
+### 3. 타임딜 서비스 | 재고 경합 · 캐시 · 레질리언스
+> **Role:** 설계 · 구현 · 측정 전체 · **Stack:** Java · Spring Boot · Querydsl · Redis · Caffeine · Resilience4j
+
+- **락 전략 전환**: 비관적 락 · 낙관적 락 · Redis 분산 락을 설정값 하나(`order.lock-strategy`)로 갈아 끼우며 재고 정합성과 응답 시간을 비교
+- **조회 캐시**: Caffeine 으로 상품 목록·상세를 캐싱해 주문이 몰리는 동안에도 조회 경로가 DB 를 덜 치게 함
+- **장애 격리**: Resilience4j rate limiting 과 circuit breaker 로 실패가 번지지 않게 경계를 세움
+- **인증**: JWT 발급과 블랙리스트로 로그아웃된 토큰을 차단
+- **관측과 측정**: Actuator · Prometheus · Grafana 대시보드를 붙이고 k6 로 성능을 측정해 문서로 남김
+
+🔗 https://github.com/sjh9714/timedeal-service
+
+<br/>
+
+### 4. MSA Shop | 서비스 분리 · SAGA · Outbox
+> **Role:** 설계 · 구현 전체 · **Stack:** Java · Spring Boot 멀티 모듈 · Spring Cloud Gateway · RabbitMQ
+
+- **서비스 경계 설계**: User · Product · Order · Payment · Settlement · Gateway 여섯으로 나누고 각 서비스의 책임과 장애 경계를 분리
+- **보상 트랜잭션**: 재고 예약 → 결제 → 주문 저장 흐름에서 중간이 실패하면 SAGA 보상으로 되돌리도록 구현
+- **Outbox 처리**: 이벤트 발행과 DB 커밋이 어긋나지 않도록 Outbox 를 거쳐 RabbitMQ 로 흘려보냄
+- **게이트웨이**: 단일 진입점에서 라우팅 · JWT 검증 · rate limit 을 처리
+- **정산 집계**: 결제 완료 이벤트를 구독해 일·월 매출을 집계하는 서비스를 분리
+
+🔗 https://github.com/sjh9714/msa-shop
+
+<br/>
+
+### 그 외
+
+| 프로젝트 | 다룬 것 |
+|---|---|
+| [TrafficLab](https://github.com/sjh9714/TrafficLab) | 좌석 경합 시나리오를 직접 실행해 `UNSAFE` · 낙관 · 비관 · Redis 락 네 전략의 중복 예약과 latency 를 나란히 비교하는 실험 플랫폼 |
+| [ai-usage-billing-gateway](https://github.com/sjh9714/ai-usage-billing-gateway) | 멀티테넌트 AI 사용량 과금. Idempotency-Key 로 중복 계량 차단, HMAC 서명 검증, 잔액을 덮어쓰지 않는 append-only 원장 |
+| [interview-coach](https://github.com/sjh9714/interview-coach) | JD 분석부터 모의 면접 · SSE 피드백까지. Spring Boot 5개 서비스와 Next.js |
+| [Social_Login](https://github.com/sjh9714/Social_Login) | OAuth2 · JWT · Redis 인증 흐름. Refresh Token 저장·검증·삭제와 Google 소셜 로그인 |
 
 <br/>
 
