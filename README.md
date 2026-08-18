@@ -124,9 +124,3 @@
 - [요즘 자꾸 보이는 하네스, 루프, 그래프가 뭔지 공부해봤다](https://sjh9714.tistory.com/11)<!-- BLOG-POST-LIST:END -->
 
 <br/>
-
-## 📬 Contact
-
-<a href="mailto:jinhyuk9714@gmail.com">
-  <img src="https://img.shields.io/badge/jinhyuk9714@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
