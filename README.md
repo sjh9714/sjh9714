@@ -114,32 +114,6 @@
 
 <br/>
 
-### 3. 타임딜 서비스 | 재고 경합 · 캐시 · 레질리언스
-> **Role:** 설계 · 구현 · 측정 전체 · **Stack:** Java · Spring Boot · Querydsl · Redis · Caffeine · Resilience4j
-
-- **락 전략 전환**: 비관적 락 · 낙관적 락 · Redis 분산 락을 설정값 하나(`order.lock-strategy`)로 갈아 끼우며 재고 정합성과 응답 시간을 비교
-- **조회 캐시**: Caffeine 으로 상품 목록·상세를 캐싱해 주문이 몰리는 동안에도 조회 경로가 DB 를 덜 치게 함
-- **장애 격리**: Resilience4j rate limiting 과 circuit breaker 로 실패가 번지지 않게 경계를 세움
-- **인증**: JWT 발급과 블랙리스트로 로그아웃된 토큰을 차단
-- **관측과 측정**: Actuator · Prometheus · Grafana 대시보드를 붙이고 k6 로 성능을 측정해 문서로 남김
-
-🔗 https://github.com/sjh9714/timedeal-service
-
-<br/>
-
-### 4. MSA Shop | 서비스 분리 · SAGA · Outbox
-> **Role:** 설계 · 구현 전체 · **Stack:** Java · Spring Boot 멀티 모듈 · Spring Cloud Gateway · RabbitMQ
-
-- **서비스 경계 설계**: User · Product · Order · Payment · Settlement · Gateway 여섯으로 나누고 각 서비스의 책임과 장애 경계를 분리
-- **보상 트랜잭션**: 재고 예약 → 결제 → 주문 저장 흐름에서 중간이 실패하면 SAGA 보상으로 되돌리도록 구현
-- **Outbox 처리**: 이벤트 발행과 DB 커밋이 어긋나지 않도록 Outbox 를 거쳐 RabbitMQ 로 흘려보냄
-- **게이트웨이**: 단일 진입점에서 라우팅 · JWT 검증 · rate limit 을 처리
-- **정산 집계**: 결제 완료 이벤트를 구독해 일·월 매출을 집계하는 서비스를 분리
-
-🔗 https://github.com/sjh9714/msa-shop
-
-<br/>
-
 ## ✍️ Recent Posts
 
 <!-- BLOG-POST-LIST:START -->
