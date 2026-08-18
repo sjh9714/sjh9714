@@ -30,7 +30,8 @@ jobs:
         with:
           feed_list: "https://sjh9714.tistory.com/rss"
           max_post_count: 5
-          template: "$newline- [$title]($url)"
+          template: "$newline- [$title]($url) <sub>$date</sub>"
+          date_format: "yyyy.mm.dd"
           accept_header: "*/*"
           skip_commit: true
           enable_keepalive: false

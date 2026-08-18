@@ -1,6 +1,8 @@
 <h1 align="center">성진혁</h1>
 <h3 align="center">Backend Developer</h3>
 
+<p align="center"><em>문제를 나누고 측정해 개선합니다.</em></p>
+
 <p align="center">
   <a href="https://sjh9714.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
   <a href="https://sjh9714.tistory.com"><img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=tistory&logoColor=white"/></a>
@@ -35,7 +37,8 @@
 ## 📂 Team Projects
 
 ### 1. FinMate | 20대의 첫 금융 온보딩 서비스
-> **Role:** Backend · **기간:** 2026.04 ~ 2026.08 · **팀:** 4인 (하나금융그룹 x 금융감독원 청년 금융인재)
+> **Role:** Backend · **기간:** 2026.04 ~ 2026.08 · **팀:** 4인
+> **결과:** 하나금융그룹 x 금융감독원 청년 금융인재 **결선 진출작**
 
 - **API 서버 구현**: Java · Spring · PostgreSQL 로 인증 · 미션 · 또래 비교 · 리포트까지 서비스 API 전 범위를 설계하고 구현
 - **통합 테스트 환경**: Testcontainers 로 실제 PostgreSQL 을 띄워 검증하는 통합 테스트 50개를 붙여, 로컬과 CI 가 같은 DB 에서 돌게 함
@@ -60,7 +63,8 @@
 <br/>
 
 ### 3. Student Start Mode | 유학생 금융 온보딩
-> **Role:** 기획 · 프로토타입 · **기간:** 2026.04 ~ 2026.05 · **팀:** 4인 (청년 금융인재 예선·본선 통과작)
+> **Role:** 기획 · 프로토타입 · **기간:** 2026.04 ~ 2026.05 · **팀:** 4인
+> **결과:** 청년 금융인재 **예선 통과 · 본선 합격작**
 
 - **상태 기반 체크리스트**: 정보를 모아 보여주는 대신 지금 가능 / 다음 단계 / 잠김 으로 나눠, 현재 상태에서 할 수 있는 것만 앞에 둠
 - **상태 변화 반영**: ARC 수령 같은 변화가 생기면 잠긴 항목을 풀고 다음 작업을 안내
@@ -131,10 +135,11 @@
 ## ✍️ Recent Posts
 
 <!-- BLOG-POST-LIST:START -->
-- [내 클로드 코드 세팅](https://sjh9714.tistory.com/15)
-- [코딩 장벽은 사라졌는데, 다른 벽이 보이기 시작했다 - 바이브 코딩 6개월](https://sjh9714.tistory.com/14)
-- [AI 슬롭 - 품질이 아니라 신뢰가 문제다](https://sjh9714.tistory.com/13)
-- [컴퓨터구조 다시 공부해보기](https://sjh9714.tistory.com/12)
-- [요즘 자꾸 보이는 하네스, 루프, 그래프가 뭔지 공부해봤다](https://sjh9714.tistory.com/11)<!-- BLOG-POST-LIST:END -->
+- [내 클로드 코드 세팅](https://sjh9714.tistory.com/15) <sub>2026.08.17</sub>
+- [코딩 장벽은 사라졌는데, 다른 벽이 보이기 시작했다 - 바이브 코딩 6개월](https://sjh9714.tistory.com/14) <sub>2026.08.11</sub>
+- [AI 슬롭 - 품질이 아니라 신뢰가 문제다](https://sjh9714.tistory.com/13) <sub>2026.08.11</sub>
+- [컴퓨터구조 다시 공부해보기](https://sjh9714.tistory.com/12) <sub>2026.08.10</sub>
+- [요즘 자꾸 보이는 하네스, 루프, 그래프가 뭔지 공부해봤다](https://sjh9714.tistory.com/11) <sub>2026.08.09</sub>
+<!-- BLOG-POST-LIST:END -->
 
 <br/>
