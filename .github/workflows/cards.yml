@@ -1,4 +1,4 @@
-# 블로그 최근 글을 README 에 써넣는다.
+# 통계 카드를 받아 리포에 커밋하고, 블로그 최근 글을 README 에 써넣는다.
 # 커밋 주체는 github-actions[bot] — 사람 커밋으로 위장하면 잔디가 거짓말이 된다.
 name: cards
 
@@ -35,6 +35,28 @@ jobs:
           accept_header: "*/*"
           skip_commit: true
           enable_keepalive: false
+
+      # 통계 카드는 남의 Vercel 인스턴스에서 온다. README 가 그 주소를 직접
+      # 가리키면 인스턴스가 느리거나 토큰 한도에 걸릴 때 프로필에서 빈 자리가
+      # 된다. 그래서 하루 한 번 받아서 커밋하고 README 는 커밋된 파일을 본다.
+      # 받기에 실패하면 기존 파일을 그대로 둔다.
+      - name: 통계 카드를 받아둔다
+        env:
+          BASE: "https://github-readme-stats-salesp07.vercel.app/api?username=sjh9714&show_icons=true&include_all_commits=true&rank_icon=percentile&hide_border=true"
+        run: |
+          fetch() {  # $1=파일 $2=주소
+            tmp=$(mktemp)
+            if curl -sfL --max-time 30 "$2" -o "$tmp" \
+               && head -c 200 "$tmp" | grep -q "<svg" \
+               && ! grep -q "Maximum retries" "$tmp"; then
+              mv "$tmp" "$1"; echo "갱신: $1"
+            else
+              rm -f "$tmp"; echo "실패, 기존 파일 유지: $1"
+            fi
+          }
+          mkdir -p stats
+          fetch stats/rank-light.svg "$BASE"
+          fetch stats/rank-dark.svg  "$BASE&theme=github_dark"
 
       - name: 바뀐 게 있으면 커밋한다
         run: |
