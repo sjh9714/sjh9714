@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://sjh9714.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
   <a href="https://sjh9714.tistory.com"><img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=tistory&logoColor=white"/></a>
-  <a href="https://github.com/pulls?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%3Apr%2Bauthor%3Asjh9714%2Bis%3Amerged%2B-user%3Asjh9714%2B-org%3Agaga-studio%2B-org%3Atech4good-2026&query=%24.total_count&label=OSS%20merged%20PRs&style=for-the-badge&color=6e40c9&logo=github&logoColor=white"/></a>
+  <a href="https://github.com/pulls?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714+-org%3Agaga-studio+-org%3Atech4good-2026+-org%3Akio-vibe+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%3Apr%2Bauthor%3Asjh9714%2Bis%3Amerged%2B-user%3Asjh9714%2B-org%3Agaga-studio%2B-org%3Atech4good-2026%2B-org%3Akio-vibe%2B-org%3Alikelion-cuk-backend-12th%2B-org%3ATeam-Back-likelion%2B-org%3AMeotSamPing&query=%24.total_count&label=OSS%20merged%20PRs&style=for-the-badge&color=6e40c9&logo=github&logoColor=white"/></a>
   <a href="https://vluu.vercel.app"><img src="https://img.shields.io/badge/Gallery-111111?style=for-the-badge&logo=googlephotos&logoColor=white"/></a>
 </p>
 
