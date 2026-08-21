@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">JinHyuk Sung's GitHub Stats, Rank: A</title>
-        <desc id="descId">Total Stars Earned: 71, Total Commits  : 71, Total PRs: 556, Total Issues: 114, Contributed to (last year): 202</desc>
+        <desc id="descId">Total Stars Earned: 73, Total Commits  : 73, Total PRs: 574, Total Issues: 118, Contributed to (last year): 203</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -67,7 +67,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 94.0328324467208;
+        stroke-dashoffset: 93.06061069110729;
       }
     }
   
@@ -156,7 +156,7 @@
         x="219.01"
         y="12.5"
         data-testid="stars"
-      >71</text>
+      >73</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -186,7 +186,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >556</text>
+      >574</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -201,7 +201,7 @@
         x="219.01"
         y="12.5"
         data-testid="issues"
-      >114</text>
+      >118</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -216,7 +216,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >202</text>
+      >203</text>
     </g>
   </g>
     </svg>
