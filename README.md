@@ -12,6 +12,20 @@
 
 <br/>
 
+## 🔬 Current Experiment
+
+### MCP Host Canary | managed MCP host가 실제로 도달한 protocol boundary 기록
+> **Role:** 설계 · 구현 · 공개 검증 전체 · **기간:** 2026.08 · **Stack:** TypeScript · Hono · MCP SDK · React
+
+- **UI 상태와 서버 관측 분리**: `initialize` · `tools/list` · 실제 tool callback을 서로 다른 단계로 기록하고, 수신 요청과 callback 실행도 구분
+- **동일 canary의 다른 경계**: Claude Web은 258개 manifest를 두 번 가져갔지만 `sentinel_257` callback은 없었고, ChatGPT Developer mode는 같은 sentinel을 세 번 실행
+- **과장하지 않는 결과**: 단일 시점의 server-observed event이며, 호스트의 호환성 등급이나 내부 원인 판정으로 사용하지 않음
+- **비밀 비보존**: token · prompt · request body · tool argument · IP · raw User-Agent를 보존하지 않고 30분 뒤 endpoint를 폐기
+
+🔗 [Source](https://github.com/sjh9714/mcp-host-canary) · [30-minute live beta](https://mcp-host-canary-sg.onrender.com) · [Independent host pilot](https://github.com/sjh9714/mcp-host-canary/issues/1)
+
+<br/>
+
 ## 📊 Stats
 
 <picture>
