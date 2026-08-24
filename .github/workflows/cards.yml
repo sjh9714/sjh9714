@@ -1,0 +1,71 @@
+# 통계 카드를 받아 리포에 커밋하고, 블로그 최근 글을 README 에 써넣는다.
+# 커밋 주체는 github-actions[bot] — 사람 커밋으로 위장하면 잔디가 거짓말이 된다.
+name: cards
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 매일 06:00 KST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/cards.yml"]
+
+# 같은 워크플로가 두 번 겹쳐 돌면 나중 것의 git push 가 거부된다. 실제로 겪었다.
+concurrency:
+  group: cards
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 티스토리는 Accept 가 application/rss+xml 이면 406 을 준다. UA 는 무관하고
+      # 이 헤더만 문제다. keepalive 의 더미 커밋도 끄고, 커밋은 아래에서 한다.
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://sjh9714.tistory.com/rss"
+          max_post_count: 5
+          template: "$newline- [$title]($url) <sub>$date</sub>"
+          date_format: "yyyy.mm.dd"
+          accept_header: "*/*"
+          skip_commit: true
+          enable_keepalive: false
+
+      # 통계 카드는 남의 Vercel 인스턴스에서 온다. README 가 그 주소를 직접
+      # 가리키면 인스턴스가 느리거나 토큰 한도에 걸릴 때 프로필에서 빈 자리가
+      # 된다. 그래서 하루 한 번 받아서 커밋하고 README 는 커밋된 파일을 본다.
+      # 받기에 실패하면 기존 파일을 그대로 둔다.
+      - name: 통계 카드를 받아둔다
+        env:
+          BASE: "https://github-readme-stats-salesp07.vercel.app/api?username=sjh9714&show_icons=true&include_all_commits=true&rank_icon=percentile&hide_border=true"
+        run: |
+          fetch() {  # $1=파일 $2=주소
+            tmp=$(mktemp)
+            if curl -sfL --max-time 30 "$2" -o "$tmp" \
+               && head -c 200 "$tmp" | grep -q "<svg" \
+               && ! grep -q "Maximum retries" "$tmp"; then
+              mv "$tmp" "$1"; echo "갱신: $1"
+            else
+              rm -f "$tmp"; echo "실패, 기존 파일 유지: $1"
+            fi
+          }
+          mkdir -p stats
+          fetch stats/rank-light.svg "$BASE"
+          fetch stats/rank-dark.svg  "$BASE&theme=github_dark"
+
+      - name: 바뀐 게 있으면 커밋한다
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "변화 없음 — 커밋하지 않는다"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: 블로그 최근 글을 갱신한다"
+          git push
