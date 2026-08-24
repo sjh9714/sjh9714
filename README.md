@@ -76,5 +76,4 @@
 <!-- BLOG-POST-LIST:START -->
 - [내 클로드 코드 세팅](https://sjh9714.tistory.com/15) <sub>2026.08.17</sub>
 - [코딩 장벽은 사라졌는데, 다른 벽이 보이기 시작했다 - 바이브 코딩 6개월](https://sjh9714.tistory.com/14) <sub>2026.08.11</sub>
-- [AI 슬롭 - 품질이 아니라 신뢰가 문제다](https://sjh9714.tistory.com/13) <sub>2026.08.10</sub>
-<!-- BLOG-POST-LIST:END -->
+- [AI 슬롭 - 품질이 아니라 신뢰가 문제다](https://sjh9714.tistory.com/13) <sub>2026.08.10</sub><!-- BLOG-POST-LIST:END -->
