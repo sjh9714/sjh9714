@@ -1,0 +1,47 @@
+# 티스토리의 최신 글 3개를 프로필 README에 반영한다.
+# 커밋 주체는 github-actions[bot]으로 남겨 사람의 활동 기록과 구분한다.
+name: profile-readme
+
+on:
+  schedule:
+    - cron: "0 21 * * *" # 매일 06:00 KST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/profile.yml"]
+
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 티스토리는 Accept가 application/rss+xml이면 406을 반환하므로 */*를 사용한다.
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://sjh9714.tistory.com/rss"
+          max_post_count: 3
+          template: "$newline- [$title]($url) <sub>$date</sub>"
+          date_format: "yyyy.mm.dd"
+          accept_header: "*/*"
+          skip_commit: true
+          enable_keepalive: false
+
+      - name: 바뀐 글 목록을 커밋한다
+        run: |
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "변화 없음 — 커밋하지 않는다"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: 블로그 최신 글을 갱신한다"
+          git push
