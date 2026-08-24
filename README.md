@@ -1,12 +1,12 @@
 <h1 align="center">성진혁</h1>
-<h3 align="center">Backend Developer</h3>
+<h3 align="center">Product Engineer · Backend Developer</h3>
 
-<p align="center"><em>문제를 나누고 측정해 개선합니다.</em></p>
+<p align="center"><em>사용자 반응으로 문제를 좁히고, 화면·API·외부 데이터가 만나는 경계를 구현한 뒤 테스트와 외부 리뷰로 검증합니다.</em></p>
 
 <p align="center">
   <a href="https://sjh9714.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
   <a href="https://sjh9714.tistory.com"><img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=tistory&logoColor=white"/></a>
-  <a href="https://github.com/pulls?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714+-org%3Agaga-studio+-org%3Atech4good-2026+-org%3Akio-vibe+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%3Apr%2Bauthor%3Asjh9714%2Bis%3Amerged%2B-user%3Asjh9714%2B-org%3Agaga-studio%2B-org%3Atech4good-2026%2B-org%3Akio-vibe%2B-org%3Alikelion-cuk-backend-12th%2B-org%3ATeam-Back-likelion%2B-org%3AMeotSamPing&query=%24.total_count&label=OSS%20merged%20PRs&style=for-the-badge&color=6e40c9&logo=github&logoColor=white"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714+-org%3Agaga-studio+-org%3Atech4good-2026+-org%3Akio-vibe+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing&type=pullrequests"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%3Apr%2Bauthor%3Asjh9714%2Bis%3Amerged%2B-user%3Asjh9714%2B-org%3Agaga-studio%2B-org%3Atech4good-2026%2B-org%3Akio-vibe%2B-org%3Alikelion-cuk-backend-12th%2B-org%3ATeam-Back-likelion%2B-org%3AMeotSamPing&query=%24.total_count&label=OSS%20merged%20PRs&style=for-the-badge&color=6e40c9&logo=github&logoColor=white"/></a>
   <a href="https://vluu.vercel.app"><img src="https://img.shields.io/badge/Gallery-111111?style=for-the-badge&logo=googlephotos&logoColor=white"/></a>
 </p>
 
@@ -27,8 +27,9 @@
 ## 🌱 Experience
 
 - **가톨릭대학교 컴퓨터공학** | 재학 (2021.03 ~ )
-- **하나금융그룹 x 금융감독원 청년 금융인재 양성 프로젝트** | 금융데이터 분석 · 생성형 AI · LLM (2026.04 ~ 2026.08)
-- **Tech4Good 해커톤** | 하나금융그룹 x SK텔레콤 `SKT FLY AI` 연합 (2026.07)
+- **하나금융그룹 x 금융감독원 청년 금융인재 양성 프로젝트** | FinMate · 화면 설계 · 웹앱 · API (2026.04 ~ 2026.08)
+- **Tech4Good 해커톤** | My ETA · 백엔드 · 외부 API · 파트 간 요청·응답 조율 (2026.07)
+- **[Open Source](https://github.com/search?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714+-org%3Agaga-studio+-org%3Atech4good-2026+-org%3Akio-vibe+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing&type=pullrequests)** | 외부 프로젝트 버그 수정 · 기능 보완 · 문서 개선 · 메인테이너 리뷰 대응 (2026.07 ~ )
 - **멋쟁이사자처럼 대학 12기** | Backend · 중앙해커톤(2024.08) · 데모데이(2024.12) (2024.03 ~ 2024.12)
 - **GGUM 해커톤** | 가톨릭대 컴퓨터정보공학부 연합 해커톤 · Backend (2024.10)
 
@@ -37,65 +38,59 @@
 ## 📂 Team Projects
 
 ### 1. FinMate | 20대의 첫 금융 온보딩 서비스
-> **Role:** Backend · **기간:** 2026.04 ~ 2026.08 · **팀:** 4인
+> **Role:** 화면 설계 · 웹앱 · API · **기간:** 2026.04 ~ 2026.08 · **팀:** 4인
 > **결과:** 하나금융그룹 x 금융감독원 청년 금융인재 **결선 진출작**
 
-- **API 서버 구현**: Java · Spring · PostgreSQL 로 인증 · 미션 · 또래 비교 · 리포트까지 서비스 API 전 범위를 설계하고 구현
-- **통합 테스트 환경**: Testcontainers 로 실제 PostgreSQL 을 띄워 검증하는 통합 테스트 50개를 붙여, 로컬과 CI 가 같은 DB 에서 돌게 함
-- **저장소 분리**: 웹앱 · API · 데이터 파이프라인을 세 저장소로 나누고 API 계약 문서를 API 저장소에 모아 배포 주기를 분리
-- **주제 전환 대응**: 예선에서 쓰던 유학생 온보딩을 20대 금융 온보딩으로 옮기며 도메인 모델을 다시 세움
+- **사용자 흐름**: 팀의 97명 문제 탐색 설문과 108명 화면 조사를 바탕으로, 또래 비교 → 금융 패턴 확인 → 오늘의 작은 미션으로 이어지는 홈 흐름을 설계
+- **웹앱 구현**: 예산 · 소비 · 저축을 시각화하고 또래 스토리, AI 그림일기, 미션과 인사이트를 하나의 모바일 웹앱으로 구현
+- **API 구현**: Java · Spring · PostgreSQL로 인증, 금융 원장, 또래 비교, 피드, 미션·포인트, 인사이트와 그림일기 API를 구성
+- **데이터와 테스트**: 합성 금융 데이터 2,000명 · 887,002행을 적재하고 PostgreSQL Testcontainers 통합 테스트 50개로 주요 흐름을 검증
 
 🔗 https://github.com/gaga-studio/finmate-app
 
 <br/>
 
 ### 2. My ETA | 교통약자를 위한 배리어프리 길찾기
-> **Role:** Backend · **기간:** 2026.07 ~ 2026.08 · **팀:** 7인 (하나금융그룹 x SK텔레콤 Tech4Good)
+> **Role:** 백엔드 · 외부 API · 요청·응답 조율 · **기간:** 2026.07 ~ 2026.08 · **팀:** 7인 (하나금융그룹 x SK텔레콤 Tech4Good)
 
-- **개인화 ETA**: 해커톤에서 화면과 API 구조를 구현해 시연하고, 이후 프로필 보행속도와 경로 거리로 계산하는 엔진과 GPS 기반 속도 학습까지 완성
-- **공공데이터 연동**: 서울 버스·지하철 실시간 도착정보, 저상버스 여부, 엘리베이터 접근성 어댑터를 구현하고 확인되지 않은 응답은 합성하지 않고 `UNKNOWN`으로 처리
-- **미확인 정보 표기**: 확인되지 않은 시설 정보를 이용 가능으로 단정하지 않고 `UNKNOWN` 상태로 노출
-- **재탐색**: 경로 이탈과 대중교통 놓침을 감지해 현재 위치 기준으로 경로와 ETA 를 다시 계산
-- **검증**: 개인화 계산, 속도 학습, 재탐색과 API 계약을 백엔드 69개·프론트엔드 23개 자동 테스트로 고정
+- **개인화 ETA**: 이동 유형 · 보조기구 · 보행속도와 경로 구간 거리를 반영해 일반 ETA와 개인화 ETA를 함께 계산
+- **지도와 교통 데이터**: React 지도 화면과 FastAPI를 연결하고 Kakao 장소 검색, TMAP 경로, 서울 버스·지하철·엘리베이터 데이터를 어댑터로 구성
+- **이동 중 안내**: 유효 GPS 표본으로 보행속도를 갱신하고 경로 이탈이나 대중교통 놓침이 발생하면 현재 위치에서 경로와 ETA를 다시 계산
+- **상태와 테스트**: 확인된 정보와 미확인 정보를 구분하는 응답 모델을 설계하고 백엔드 69개·프론트엔드 23개 자동 테스트로 API·화면 흐름을 검증
 
 🔗 https://github.com/tech4good-2026/eta
 
 <br/>
 
 ### 3. Student Start Mode | 유학생 금융 온보딩
-> **Role:** 기획 · 프로토타입 · **기간:** 2026.04 ~ 2026.05 · **팀:** 4인
+> **Role:** 아이디어 제안 · 프로토타입 공동 구현 · 발표 영상 편집 · **기간:** 2026.04 ~ 2026.05 · **팀:** 4인
 > 🏆 **청년 금융인재 예선 통과 · 본선 합격작**
 
-- **상태 기반 체크리스트**: 정보를 모아 보여주는 대신 지금 가능 / 다음 단계 / 잠김 으로 나눠, 현재 상태에서 할 수 있는 것만 앞에 둠
-- **상태 변화 반영**: ARC 수령 같은 변화가 생기면 잠긴 항목을 풀고 다음 작업을 안내
-- **역할 분리**: 판단은 상태와 규칙이 하고, AI 채팅은 세부 질문을 돕는 보조로 한정
-- **일정 안내**: 비자 만료일 · ARC 수령일 · 계좌 개설 권장일을 캘린더로 묶어 다음에 할 일이 날짜로 보이게 함
-- **출처 노출**: 하나은행과 금융 규정에 근거한 안내임을 화면 안에서 함께 표시
+- **상태 기반 체크리스트**: 유학생의 첫 90일을 지금 가능 / 다음 단계 / 잠김으로 나눠 현재 상태에서 할 수 있는 금융 업무를 먼저 안내
+- **규칙과 AI의 역할**: 비자와 외국인등록증 상태는 규칙으로 판단하고, AI 채팅은 각 단계의 세부 질문을 돕도록 분리
+- **일정과 출처**: 비자 만료일 · 외국인등록증 수령일 · 계좌 개설 권장일을 캘린더로 묶고 안내 근거를 화면에 함께 표시
 
 🔗 https://github.com/sjh9714/Student_Start_Mode_demo
 
 <br/>
 
 ### 4. Memory of Year | 추억 앨범 서비스
-> **Role:** Backend · **기간:** 2024.10 ~ 2024.12 · **팀:** 7인 (디자인 1 · 프론트 2 · 백엔드 4) · 멋쟁이사자처럼 데모데이
+> **Role:** Backend · Infrastructure · **기간:** 2024.10 ~ 2024.12 · **팀:** 7인 (디자인 1 · 프론트 2 · 백엔드 4) · 멋쟁이사자처럼 데모데이
 
-- **도메인 API 구현**: 인증 · 앨범 · 편지 · 사진 네 갈래의 백엔드 기반을 맡아 설계하고 구현
-- **인프라 직접 구성**: AWS EC2 · DB · S3 · HTTPS 를 직접 세워 팀이 시연할 수 있는 서버를 운영
-- **프론트 연동**: 배포된 API 로 프론트엔드 화면을 붙이고 데모데이 시연까지 진행
-- **사후 재검증**: 2026년에 다시 열어 앨범 소유권 판정과 MySQL · S3 사이의 경계를 재검토
+- **백엔드 기반**: 인증 · 앨범 · 편지 · 사진 API의 기반을 설계하고 구현
+- **배포와 연동**: AWS EC2 · DB · S3 · HTTPS 환경을 구성하고 배포 API를 프론트엔드 화면과 연결해 팀 시연을 지원
+- **후속 검증 (2026)**: 앨범 소유권 판정과 MySQL · S3 사이의 저장 경계를 다시 검토
 
 🔗 https://github.com/sjh9714/memory_of_year
 
 <br/>
 
 ### 5. BorrowMe | 교내 물품 대여 서비스
-> **Role:** Backend · **기간:** 2024.10 (GGUM 해커톤, 11인) → 2026 개인 재작업
+> **Role:** Backend · REST API · 데이터 이관 · **기간:** 2024.10 (GGUM 해커톤, 11인) → 2026 개인 재작업
 
-- **알림 기능 (2024)**: 댓글·답글 알림 생성과 조회 · 읽음 처리 · 삭제를 구현하고 `NotificationController` 를 REST API 로 전환
-- **대여 생명주기 완성 (2026)**: 요청 즉시 재고를 깎고 취소하면 되돌리는 수준이던 것을, 승인 → 인도 → 반납 확인까지 상태로 다루도록 재설계
-- **동시성 보호**: 같은 물건에 요청이 몰릴 때 재고가 음수로 내려가지 않도록 막고, 이를 고정하는 동시성 테스트 작성
-- **권한과 재시도**: 승인·인도·반납 각 단계의 권한을 분리하고, 같은 요청이 두 번 들어와도 상태가 한 번만 넘어가도록 처리
-- **스키마 이관**: 기존 데이터를 새 상태 모델로 옮기는 마이그레이션을 작성하고 CI 에 연결
+- **알림 API (2024)**: 댓글·답글이 작성되면 대상 사용자의 알림을 생성하고, 알림 목록 조회·읽음 처리·삭제로 이어지는 REST API를 구현
+- **대여 흐름 재설계 (2026)**: 요청과 취소만 있던 흐름을 승인 → 인도 → 반납 확인으로 이어지는 대여 상태와 API로 확장
+- **데이터 이관 (2026)**: 기존 대여 데이터를 새로운 상태·이력 구조로 옮기는 DB 마이그레이션을 작성
 
 🔗 https://github.com/sjh9714/borrow_me
 
@@ -103,30 +98,32 @@
 
 ## 💻 Backend Portfolio
 
-> 동시성 · 정합성 · 실시간 전달 · 분산 트랜잭션을 주제로 직접 만들고 측정한 개인 프로젝트입니다.
-> 정리된 화면은 [sjh9714.vercel.app](https://sjh9714.vercel.app) 에 있습니다.
+> 여러 사용자가 동시에 예약하거나 메시지를 주고받을 때 생기는 충돌·중복·누락 문제의 해결 방식을 직접 구현하고 테스트한 개인 프로젝트입니다.
+> 설계와 측정 과정은 [sjh9714.vercel.app](https://sjh9714.vercel.app)에 정리했습니다.
 
-### 1. 좌석 예약 시스템 | 대기열 · 락 전략 · 이벤트 전달
-> **Role:** 설계 · 구현 · 측정 전체 · **기간:** 2026.02 ~ 2026.05 · **Stack:** Java · Spring Boot · PostgreSQL · Redis · React
+### 1. 좌석 예약 시스템 | 대기열 · 동시 예약 · 실패 복구
+> 사용자가 대기열을 통과해 좌석을 일정 시간 선점하고, 결제를 완료하면 예매가 확정되는 시스템입니다.
+>
+> **Role:** 설계 · 구현 · 측정 전체 · **기간:** 2026.02 ~ 2026.05 · **Stack:** Java 21 · Spring Boot 3.4 · PostgreSQL · Redis · Kafka · React
 
-- **중복 판매 차단**: 같은 좌석에 100명이 몰릴 때 나던 oversell 을 락 3종을 비교해 0건으로, p95 는 106–215ms 로 실측
-- **경합 원인 규명**: 다른 좌석인데 예매가 서로 실패하던 원인이 잔여석 카운터 한 줄임을 밝혀 성공률 40% → 100%
-- **매진 좌석 선필터**: 매진된 좌석 요청까지 DB 를 잡던 것을 Redis 에서 미리 걸러 쓰기 p95 37ms → 6ms, 총 RPS 969 → 1,005
-- **대기열과 멱등성**: 순번을 SSE 로 내려보내고, 토큰 응답이 유실돼 재요청해도 예매는 한 건만 생기도록 처리
-- **이벤트 전달**: Outbox 로 예매 확정 이벤트를 흘려보내 후속 처리와 예매 트랜잭션을 분리
+- **동시 예약 제어**: 같은 좌석에 여러 요청이 동시에 들어와도 한 건만 예약되도록 비관적 락·낙관적 락·Redis 분산 락을 각각 구현해 동일한 동시 요청 조건에서 검증했습니다.
+- **동시성 검증**: 좌석 1개에 100건을 동시에 요청한 로컬 테스트에서 세 방식 모두 한 건만 예약됐고 중복 판매는 0건이었습니다.
+- **중복 요청 방지**: 대기 순서를 실시간으로 알리고, 같은 예약·결제 요청이 다시 들어와도 한 번만 처리되도록 요청 식별값을 적용했습니다.
+- **후속 처리 복구**: 예매 기록과 후속 이벤트를 함께 저장했습니다. 전송은 자동으로 재시도하고, 반복 실패한 작업은 별도로 보관해 다시 처리할 수 있게 구성했습니다.
 
 🔗 https://github.com/sjh9714/concert-booking
 
 <br/>
 
-### 2. 실시간 채팅 서버 | 다중 인스턴스 · 영속화 · 전달 검증
-> **Role:** 설계 · 구현 · 측정 전체 · **기간:** 2026.02 ~ 2026.05 · **Stack:** Java · Spring Boot · STOMP · Redis · React
+### 2. 실시간 채팅 서버 | 저장 · 다중 서버 전달 · 재연결
+> 여러 서버에 나뉘어 접속한 사용자가 메시지를 실시간으로 주고받고, 재접속해도 놓친 대화를 이어서 볼 수 있는 시스템입니다.
+>
+> **Role:** 설계 · 구현 · 측정 전체 · **기간:** 2026.02 ~ 2026.05 · **Stack:** Java 21 · Spring Boot 3.4 · PostgreSQL · Kafka · Redis · STOMP · React
 
-- **전달 보장**: DB 커밋이 끝난 뒤에만 브로드캐스트하도록 순서를 강제. 50명이 두 인스턴스에 나뉜 3회 반복에서 기대 4,900건 전부 도착, 누락·중복·순서 위반 0건
-- **N+1 제거**: 채팅방 목록이 방 개수만큼 쿼리를 날리던 것을 JPQL 프로젝션과 IN 배치로 모아 방 50개 기준 101회 → 3회 고정
-- **인덱스 설계**: 커서 페이지네이션 · 멱등성 · unread 쿼리를 EXPLAIN ANALYZE 로 분석해 인덱스 5개 추가, 이미 커버되는 3개는 근거를 적고 추가하지 않음
-- **부하 측정**: 200 VU 조회 부하 3회 반복에서 RPS 1,806–1,940 · p95 129–133ms · 39.8만 요청 중 HTTP 실패 0건
-- **재연결 보충**: 끊겼다 돌아온 사용자가 마지막 수신 ID 를 기준으로 놓친 구간만 따라잡도록 구현
+- **저장 후 전달**: 메시지가 데이터베이스에 저장된 뒤에만 상대방 화면으로 전달했습니다. 여러 서버에 접속한 사용자에게도 같은 메시지가 전파되도록 구성했습니다.
+- **다중 서버 전달 검증**: 50명을 서버 2대에 나눠 연결하고 메시지 100건을 보내는 로컬 테스트를 3회 반복했습니다. 각 메시지가 나머지 49명에게 전달돼야 하는 총 4,900건이 매회 모두 도착했고 누락·중복은 0건이었습니다.
+- **목록 조회 최적화**: 채팅방마다 필요한 정보를 따로 가져오던 구조를 한 번에 묶어 조회하도록 바꿔, 채팅방 50개 기준 데이터베이스 쿼리를 101회에서 3회로 줄였습니다.
+- **재연결 보충**: 연결이 끊긴 동안의 메시지는 마지막으로 받은 메시지 ID 이후부터만 다시 가져오도록 구현했습니다.
 
 🔗 https://github.com/sjh9714/realtime-chat
 
