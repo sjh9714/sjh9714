@@ -131,10 +131,10 @@
 ## ✍️ Recent Posts
 
 <!-- BLOG-POST-LIST:START -->
-- [내 클로드 코드 세팅](https://sjh9714.tistory.com/15) <sub>2026.08.17</sub>
-- [코딩 장벽은 사라졌는데, 다른 벽이 보이기 시작했다 - 바이브 코딩 6개월](https://sjh9714.tistory.com/14) <sub>2026.08.11</sub>
-- [AI 슬롭 - 품질이 아니라 신뢰가 문제다](https://sjh9714.tistory.com/13) <sub>2026.08.10</sub>
+- [프로젝트 밖을 보게 하기 위해 AI 에이전트의 작업 순서를 바꿨다](https://sjh9714.tistory.com/15) <sub>2026.08.17</sub>
+- [처음 만든 내 제품은 출시하지 못했다](https://sjh9714.tistory.com/14) <sub>2026.08.11</sub>
+- [내 글이 LLM 슬롭으로 읽힌 이유](https://sjh9714.tistory.com/13) <sub>2026.08.10</sub>
 - [컴퓨터구조 다시 공부해보기](https://sjh9714.tistory.com/12) <sub>2026.08.10</sub>
-- [요즘 자꾸 보이는 하네스, 루프, 그래프가 뭔지 공부해봤다](https://sjh9714.tistory.com/11) <sub>2026.08.08</sub><!-- BLOG-POST-LIST:END -->
+- [내 오픈소스 자동화를 하네스&amp;middot;루프&amp;middot;그래프로 그려봤다](https://sjh9714.tistory.com/11) <sub>2026.08.08</sub><!-- BLOG-POST-LIST:END -->
 
 <br/>
