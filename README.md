@@ -4,10 +4,10 @@
 <p align="center"><em>사용자 반응으로 문제를 좁히고, 화면·API·외부 데이터가 만나는 경계를 구현한 뒤 테스트와 외부 리뷰로 검증합니다.</em></p>
 
 <p align="center">
-  <a href="https://sjh9714.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
-  <a href="https://sjh9714.tistory.com"><img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=tistory&logoColor=white"/></a>
-  <a href="https://github.com/search?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714+-org%3Agaga-studio+-org%3Atech4good-2026+-org%3Akio-vibe+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing&type=pullrequests"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%3Apr%2Bauthor%3Asjh9714%2Bis%3Amerged%2B-user%3Asjh9714%2B-org%3Agaga-studio%2B-org%3Atech4good-2026%2B-org%3Akio-vibe%2B-org%3Alikelion-cuk-backend-12th%2B-org%3ATeam-Back-likelion%2B-org%3AMeotSamPing&query=%24.total_count&label=OSS%20merged%20PRs&style=for-the-badge&color=6e40c9&logo=github&logoColor=white"/></a>
-  <a href="https://vluu.vercel.app"><img src="https://img.shields.io/badge/Gallery-111111?style=for-the-badge&logo=googlephotos&logoColor=white"/></a>
+  <a href="https://sjh9714.vercel.app"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+  <a href="https://sjh9714.tistory.com"><img src="https://img.shields.io/badge/Tistory-FF5A4A?style=for-the-badge&logo=tistory&logoColor=white"/></a>
+  <a href="https://github.com/search?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714+-org%3Agaga-studio+-org%3Atech4good-2026+-org%3Akio-vibe+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing&type=pullrequests"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%3Apr%2Bauthor%3Asjh9714%2Bis%3Amerged%2B-user%3Asjh9714%2B-org%3Agaga-studio%2B-org%3Atech4good-2026%2B-org%3Akio-vibe%2B-org%3Alikelion-cuk-backend-12th%2B-org%3ATeam-Back-likelion%2B-org%3AMeotSamPing&query=%24.total_count&label=OSS%20merged%20PRs&style=for-the-badge&color=2563EB&logo=github&logoColor=white"/></a>
+  <a href="https://vluu.vercel.app"><img src="https://img.shields.io/badge/Gallery-0F766E?style=for-the-badge&logo=googlephotos&logoColor=white"/></a>
 </p>
 
 <br/>
