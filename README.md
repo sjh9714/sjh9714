@@ -134,7 +134,7 @@
 - [프로젝트 밖을 보게 하기 위해 AI 에이전트의 작업 순서를 바꿨다](https://sjh9714.tistory.com/15) <sub>2026.08.17</sub>
 - [처음 만든 내 제품은 출시하지 못했다](https://sjh9714.tistory.com/14) <sub>2026.08.11</sub>
 - [내 글이 LLM 슬롭으로 읽힌 이유](https://sjh9714.tistory.com/13) <sub>2026.08.10</sub>
-- [컴퓨터구조 다시 공부해보기](https://sjh9714.tistory.com/12) <sub>2026.08.10</sub>
-- [내 오픈소스 자동화를 하네스&amp;middot;루프&amp;middot;그래프로 그려봤다](https://sjh9714.tistory.com/11) <sub>2026.08.08</sub><!-- BLOG-POST-LIST:END -->
+- [컴퓨터구조를 처음부터 다시 공부했다](https://sjh9714.tistory.com/12) <sub>2026.08.10</sub>
+- [하네스&amp;middot;루프&amp;middot;그래프를 공부하고 내 자동화에 대입해봤다](https://sjh9714.tistory.com/11) <sub>2026.08.08</sub><!-- BLOG-POST-LIST:END -->
 
 <br/>
