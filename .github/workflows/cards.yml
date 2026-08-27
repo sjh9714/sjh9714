@@ -33,6 +33,7 @@ jobs:
           template: "$newline- [$title]($url) <sub>$date</sub>"
           date_format: "yyyy.mm.dd"
           accept_header: "*/*"
+          disable_html_encoding: true
           skip_commit: true
           enable_keepalive: false
 
