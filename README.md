@@ -131,10 +131,10 @@
 ## ✍️ Recent Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [DB에는 저장됐는데 메시지 발행이 실패했다면 - Outbox와 DLT](https://sjh9714.tistory.com/18) <sub>2026.08.28</sub>
 - [같은 예매 요청이 두 번 와도 한 번만 처리하려면 - 멱등성](https://sjh9714.tistory.com/17) <sub>2026.08.28</sub>
 - [좌석 하나에 100명이 몰리면 어떻게 막을까 - 트랜잭션과 락](https://sjh9714.tistory.com/16) <sub>2026.08.28</sub>
 - [프로젝트 밖을 보게 하기 위해 AI 에이전트의 작업 순서를 바꿨다](https://sjh9714.tistory.com/15) <sub>2026.08.17</sub>
-- [처음 만든 내 제품은 출시하지 못했다](https://sjh9714.tistory.com/14) <sub>2026.08.11</sub>
-- [내 글이 LLM 슬롭으로 읽힌 이유](https://sjh9714.tistory.com/13) <sub>2026.08.10</sub><!-- BLOG-POST-LIST:END -->
+- [처음 만든 내 제품은 출시하지 못했다](https://sjh9714.tistory.com/14) <sub>2026.08.11</sub><!-- BLOG-POST-LIST:END -->
 
 <br/>
