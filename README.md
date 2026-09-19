@@ -16,11 +16,12 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./stats/rank-dark.svg">
-  <img src="./stats/rank-light.svg" height="195" alt="GitHub 통계 - 별, 커밋, PR, 이슈와 등급">
+  <img src="./stats/rank-light.svg" width="49%" alt="GitHub 통계 - 별, 커밋, PR, 이슈와 등급">
 </picture>
-<a href="https://solved.ac/jinhyuk9714">
-  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=jinhyuk9714" height="195" alt="백준 solved.ac 티어와 푼 문제 수">
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./stats/streak-dark.svg">
+  <img src="./stats/streak-light.svg" width="49%" alt="GitHub 연속 활동 - 총 기여, 현재 연속 활동과 최장 기록">
+</picture>
 
 <br/>
 

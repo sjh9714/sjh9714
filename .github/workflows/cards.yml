@@ -37,31 +37,34 @@ jobs:
           skip_commit: true
           enable_keepalive: false
 
-      # 통계 카드는 남의 Vercel 인스턴스에서 온다. README 가 그 주소를 직접
+      # 통계 카드는 외부 위젯 서비스에서 온다. README 가 그 주소를 직접
       # 가리키면 인스턴스가 느리거나 토큰 한도에 걸릴 때 프로필에서 빈 자리가
       # 된다. 그래서 하루 한 번 받아서 커밋하고 README 는 커밋된 파일을 본다.
       # 받기에 실패하면 기존 파일을 그대로 둔다.
       - name: 통계 카드를 받아둔다
         env:
-          BASE: "https://github-readme-stats-salesp07.vercel.app/api?username=sjh9714&show_icons=true&include_all_commits=true&rank_icon=percentile&hide_border=true"
+          BASE: "https://github-readme-stats-salesp07.vercel.app/api?username=sjh9714&show_icons=true&include_all_commits=true&card_width=495"
+          STREAK: "https://streak-stats.demolab.com/?user=sjh9714&card_width=495"
         run: |
           fetch() {  # $1=파일 $2=주소
             tmp=$(mktemp)
             if curl -sfL --max-time 30 "$2" -o "$tmp" \
                && head -c 200 "$tmp" | grep -q "<svg" \
-               && ! grep -q "Maximum retries" "$tmp"; then
+               && ! grep -Eqi "Maximum retries|Something went wrong|Error fetching|rate limit" "$tmp"; then
               mv "$tmp" "$1"; echo "갱신: $1"
             else
               rm -f "$tmp"; echo "실패, 기존 파일 유지: $1"
             fi
           }
           mkdir -p stats
-          fetch stats/rank-light.svg "$BASE"
+          fetch stats/rank-light.svg "$BASE&theme=default"
           fetch stats/rank-dark.svg  "$BASE&theme=github_dark"
+          fetch stats/streak-light.svg "$STREAK&theme=default"
+          fetch stats/streak-dark.svg  "$STREAK&theme=github-dark-blue"
 
       - name: 바뀐 게 있으면 커밋한다
         run: |
-          git add -A
+          git add README.md stats/rank-light.svg stats/rank-dark.svg stats/streak-light.svg stats/streak-dark.svg
           if git diff --cached --quiet; then
             echo "변화 없음 — 커밋하지 않는다"
             exit 0
