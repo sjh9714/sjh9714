@@ -12,19 +12,6 @@
 
 <br/>
 
-## 📊 Stats
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./stats/rank-dark.svg">
-  <img src="./stats/rank-light.svg" width="49%" alt="GitHub 통계 - 별, 커밋, PR, 이슈와 등급">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./stats/streak-dark.svg">
-  <img src="./stats/streak-light.svg" width="49%" alt="GitHub 연속 활동 - 총 기여, 현재 연속 활동과 최장 기록">
-</picture>
-
-<br/>
-
 ## 🌱 Experience
 
 - **가톨릭대학교 컴퓨터공학** | 재학 (2021.03 ~ )
