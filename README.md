@@ -28,12 +28,12 @@
 ## 🌱 Experience
 
 - **가톨릭대학교 컴퓨터공학** | 재학 (2021.03 ~ )
-- **UMC 가톨릭대학교 11기** | Product Engineering - Web · 활동 중 (2026.09 ~ )
-- **하나금융그룹 x 금융감독원 청년 금융인재 양성 프로젝트** | 금융데이터 분석·생성형 AI 교육 이수 · FinMate에서 화면 설계·웹앱·API 담당 (2026.04 ~ 2026.08)
-- **Tech4Good 해커톤** | My ETA · 백엔드 · 외부 API · 파트 간 요청·응답 조율 (2026.07)
-- **[Open Source](https://github.com/search?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714+-org%3Agaga-studio+-org%3Atech4good-2026+-org%3Akio-vibe+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing&type=pullrequests)** | 외부 프로젝트 버그 수정 · 기능 보완 · 문서 개선 · 메인테이너 리뷰 대응 (2026.07 ~ )
-- **멋쟁이사자처럼 대학 12기** | Backend · 중앙해커톤(2024.08) · 데모데이(2024.12) (2024.03 ~ 2024.12)
-- **GGUM 해커톤** | 가톨릭대 컴퓨터정보공학부 연합 해커톤 · Backend (2024.10)
+- **UMC 가톨릭대학교 11기** | Product Engineering - Web (2026.09 ~ )
+- **하나 청년 금융인재 양성 프로젝트** | AI 교육 · Student Start Mode·FinMate 개발 (2026.04 ~ 2026.08)
+- **Tech4Good 해커톤** | My ETA · 서비스 개발·개발 조율 (2026.07)
+- **[Open Source](https://github.com/search?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714+-org%3Agaga-studio+-org%3Atech4good-2026+-org%3Akio-vibe+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing&type=pullrequests)** | 외부 오픈소스 기여 (2026.07 ~ )
+- **멋쟁이사자처럼 대학 12기** | Memory of Year · 백엔드 개발 (2024.03 ~ 2024.12)
+- **GGUM 해커톤** | BorrowMe · 백엔드 개발 (2024.10)
 
 <br/>
 
