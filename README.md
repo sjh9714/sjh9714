@@ -16,6 +16,7 @@
 
 - **가톨릭대학교 컴퓨터공학** | 재학 (2021.03 ~ )
 - **UMC 가톨릭대학교 11기** | Product Engineering - Web (2026.09 ~ )
+- **MEDILUX × 잇타 × UMC 하프 해커톤** | MOTIF · 백엔드·자세 측정 로직 개발 (2026.11)
 - **하나 청년 금융인재 양성 프로젝트** | AI 교육 · Student Start Mode·FinMate 개발 (2026.04 ~ 2026.08)
 - **Tech4Good 해커톤** | My ETA · 서비스 개발·개발 조율 (2026.07)
 - **[Open Source](https://github.com/search?q=is%3Apr+author%3Asjh9714+is%3Amerged+-user%3Asjh9714+-org%3Agaga-studio+-org%3Atech4good-2026+-org%3Akio-vibe+-org%3Alikelion-cuk-backend-12th+-org%3ATeam-Back-likelion+-org%3AMeotSamPing&type=pullrequests)** | 외부 오픈소스 기여 (2026.07 ~ )
@@ -63,7 +64,19 @@
 
 <br/>
 
-### 4. Memory of Year | 추억 앨범 서비스
+### 4. MOTIF | 카메라로 스쿼트 패턴을 찾는 웹앱
+> **Role:** 백엔드 · 자세 측정 로직 · 배포 · **기간:** 2026.11 (MEDILUX × 잇타 × UMC 하프 해커톤, 4시간) · **팀:** 4인
+
+- **기기 내 자세 추적**: MediaPipe로 폰 브라우저에서 관절을 추적해 스쿼트 횟수 · 깊이 · 속도를 기록하고, 영상은 서버로 보내지 않도록 구성
+- **규칙 기반 판정**: 깊이와 속도가 처음 두 번보다 떨어지기 시작한 회차는 규칙으로 계산하고, AI는 계산된 수치의 설명과 보완 운동 제안만 맡도록 분리
+- **API와 배포**: Java · Spring Boot로 인바디 · 문진 · 세트 · 패턴 분석 API를 구성하고 Railway에 배포해 발표 시연에 사용
+- **검증과 한계 표시**: 공개 스쿼트 데이터셋(20명 · 영상 36개)의 관절 좌표로 180회 중 180회를 맞게 센 것을 확인하고, 가상 인바디와 근전도 시뮬레이션 값은 화면에 따로 표시
+
+🔗 https://github.com/hackathon-1114/backend
+
+<br/>
+
+### 5. Memory of Year | 추억 앨범 서비스
 > **Role:** Backend · Infrastructure · **기간:** 2024.10 ~ 2024.12 · **팀:** 7인 (디자인 1 · 프론트 2 · 백엔드 4) · 멋쟁이사자처럼 데모데이
 
 - **백엔드 기반**: 인증 · 앨범 · 편지 · 사진 API의 기반을 설계하고 구현
@@ -74,7 +87,7 @@
 
 <br/>
 
-### 5. BorrowMe | 교내 물품 대여 서비스
+### 6. BorrowMe | 교내 물품 대여 서비스
 > **Role:** Backend · REST API · 데이터 이관 · **기간:** 2024.10 (GGUM 해커톤, 11인) → 2026 개인 재작업
 
 - **알림 API (2024)**: 댓글·답글이 작성되면 대상 사용자의 알림을 생성하고, 알림 목록 조회·읽음 처리·삭제로 이어지는 REST API를 구현
